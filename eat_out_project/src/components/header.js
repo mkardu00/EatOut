@@ -1,9 +1,9 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Image from "../components/image"
 
-const Header = ({ siteTitle, menuLinks }) => (
+
+const Header = ({ menuLinks, siteTitle }) => (
   <header
     style={{
       background: `black`,
