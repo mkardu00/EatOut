@@ -18,6 +18,10 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+           menuLinks {
+             name
+             link
+           }
         }
       }
     }
@@ -25,7 +29,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+       <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
+
       <div
         style={{
           margin: `0 auto`,
@@ -35,10 +40,12 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+        <footer style={{
+      background: `black`,
+      color: `white`
+     }}>EatOut
+          © {new Date().getFullYear()} sva prava pridržana
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
     </>
