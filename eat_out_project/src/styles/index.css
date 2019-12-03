@@ -1,3 +1,35 @@
 #pocetnaSlikaDiv * {
-    height: 50% !important;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#rezervirajSvojStolDiv * {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    margin-bottom: 5%;
+}
+#inputBotun{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#botun{
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 16px;
+    border: 2px solid darkgray;
+    background-color: gray;
+    
+}
+#unos{
+    background-color: white;
+    background-position: 10px 10px;
+    
+    padding-left: 40px;
+    margin-right: 1%;
+    
 }

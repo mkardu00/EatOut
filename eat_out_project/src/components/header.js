@@ -7,12 +7,11 @@ const Header = ({ menuLinks, siteTitle }) => (
   <header
     style={{
       background: `white`,
-      marginBottom: `1.45rem`,
       color: `black`,
       display: "flex",
       justifyContent:"space-between",
       margin: `0 auto`,
-      padding: `0px 1.0875rem 1.45rem`
+      padding: `0px 0rem 0rem`
 
     }}
   >

@@ -10,10 +10,12 @@ const IndexPage = () => (
     <div id="pocetnaSlikaDiv">
       <Image></Image>
     </div>
-    <div style={{ maxWidth: `960px`, marginBottom: `1.45rem`, color:"black" }}>
+    <div id="rezervirajSvojStolDiv">
       <h1>Rezerviraj svoj stol </h1> 
-      <button class="primary-button">PRONAĐI RESTORAN</button>
-    </div>
+      <div id="inputBotun">   
+        <input id="unos"></input>
+        <button id="botun">PRONAĐI<br></br> RESTORAN</button></div>
+      </div>
   </Layout>
 )
 
