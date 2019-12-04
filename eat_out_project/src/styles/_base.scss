@@ -1,0 +1,41 @@
+.container#content {
+  margin-top: 60px;
+}
+body {
+  background-color: $white;
+ 
+}
+
+a {
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+body {
+  font-family: $site-font;
+}
+h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+.navbar {
+  background-color: white;
+  // border-right: 1px solid rgba(0, 0, 0, 0.4);
+  // border-left: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  line-height: 1;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+  }
+}
+ul {
+  list-style: none;
+  padding: 0;
+}

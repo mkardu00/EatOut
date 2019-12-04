@@ -4,12 +4,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
 import Post from "../components/Post"
+import { Row, Col} from "reactstrap"
 
 const Blog = () => (
   <Layout>
     <SEO title="Blog" />
     <h1>Blog</h1>
-    <StaticQuery
+   <Row>
+     <Col md="1"></Col>
+     <Col md="10">
+     <StaticQuery
      query= {blogQuery} 
      render={data => {
     return (
@@ -20,13 +24,18 @@ const Blog = () => (
            author={node.frontmatter.author}
            path={node.frontmatter.path}
            date={node.frontmatter.data}
-           body={node.frontmatter.body}
+           body={node.excerpt}
+           fluid={node.frontmatter.image.childImageSharp.fluid}
           />
         ))}
       </div>
     )
     }}
     />
+     </Col>
+     <Col md="1"></Col>
+
+   </Row>
 
   </Layout>
 )
@@ -41,7 +50,14 @@ query{
         title
         data
         author
-        path     
+        path 
+        image{
+          childImageSharp{
+            fluid(maxWidth: 600){
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }    
       }
       excerpt
     }

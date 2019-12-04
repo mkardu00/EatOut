@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import LogoFooter from "./logo_footer"
 import Header from "./header"
 
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -36,10 +37,11 @@ const Layout = ({ children }) => {
               display: "flex",
               justifyContent:"space-between",
               margin: `0 auto`,
-              padding: `0px 0rem 0rem`}}>
-            <div style={{ flex:1, maxWidth: `50px`}}><LogoFooter></LogoFooter> </div>
+              padding: `0px 0rem 0rem`}}
+              >
+            <div style={{ flex:1, maxWidth: `70px`}}><LogoFooter></LogoFooter> </div>
             <div style={{ display: "flex", textAlign:"center"}}> EatOut<br></br> © {new Date().getFullYear()} sva prava pridržana</div>
-            <div style={{flex:1, maxWidth: `50px`}}><LogoFooter></LogoFooter></div>  
+            <div style={{flex:1, maxWidth: `70px`}}><LogoFooter></LogoFooter></div>  
           </footer>
     </>
   )
