@@ -1,0 +1,9 @@
+---
+title: 'Rustikalno ili moderno'
+data: 07.12.2019
+author: ' Iva Ivić'
+path: '/second-post'
+---
+Nakon što se stiša splitski šušur, a kamene ulice i trgovi ponovno dođu do izražaja nakon ljetnih gužvi, pravo je vrijeme za sunčanje na rivi uz čašu ili šalicu omiljenog pića i isprobavanje domaće kuhinje. Rustikalno ili moderno, tradicionalno ili inovativno izbor je o kojem odlučuje svatko za sebe...
+Jedan od najnagrađivanijih hrvatskih kuhara Zlatko Marinović neraskidivu vezu s morem predstavlja u Noštromu, restoranu gdje je jelovnik nadahnut dobrim starim receptima dalmatinske kuhinje. Ovisno o željama, kod Marinovića se uživa u jastogu, ribi prve klase – ali i rižotu od priljepaka, vlasuljama te ježincima s tjesteninom. Poslužuju se jela ribara poput tradicionalne juhe, gregade, ali i modernije inačice specijaliteta, kao što su njoki punjeni repovima rakova. Jedan je od specijaliteta kuće fritaja sa škampima i pastom od tartufa. Kućno vino sasvim je solidno, a isplati se kušati i domaću rakiju od mora kojom se Zlatko Marinović ponosi. Valja imati na umu da je Noštromo stara škola kad je riječ o načinima plaćanja jer kartice ne prima.
+Odlične namirnice, domaća spiza i pristupačne cijene i više su nego dobri razlozi za posjet Pimpinelli,konobi koja se nalazi na Firulama. Terasa s nekoliko stolova ljeti je u hladu i priziva na ispijanje gemišta, bevande ili vina, a obiteljski ugođaj nudi u unutrašnjosti. Kako je zovu, mala gostionica velikog srca poznata je po maestralno pripremljenim njokima, pašticadi, rižotima i telećim koljenicama,punjenim paprikama, pivcu u prošeku te školjkama s gradela. Ugođaj dnevnog borakva Pimpinella duguje uređenju s kockastim stolnjacima i osoblju koje je često ljubazno. Ponekad malo više, osobito ako nije vrhunac sezone ili navrate poznati gosti. No osmijeh koji izaziva čarolija na tanjuru najljepša je poruka dobrodošlice.

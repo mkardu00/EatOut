@@ -4,6 +4,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import "../styles/index.css"
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Pocetna" />
@@ -11,11 +12,12 @@ const IndexPage = () => (
       <Image></Image>
     </div>
     <div id="rezervirajSvojStolDiv">
-      <h1>Rezerviraj svoj stol </h1> 
+      <h1 id="naslov">Rezerviraj svoj stol </h1> 
       <div id="inputBotun">   
-        <input id="unos"></input>
+        <input id="unos" ></input>
         <button id="botun">PRONAĐI<br></br> RESTORAN</button></div>
       </div>
+      
   </Layout>
 )
 
