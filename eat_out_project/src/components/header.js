@@ -16,7 +16,6 @@ const Header = ({ menuLinks, siteTitle }) => (
     }}
   >
      <div style={{ flex:1, maxWidth: `150px`}}>
-       <br></br>
       <Logo></Logo>
     </div>
       <div>

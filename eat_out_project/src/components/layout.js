@@ -1,15 +1,9 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import LogoFooter from "./logo_footer"
 import Header from "./header"
+import { Col} from "reactstrap"
 
 
 const Layout = ({ children }) => {
@@ -28,6 +22,8 @@ const Layout = ({ children }) => {
   `)
   return (
     <>
+     <Col md="12">
+  
        <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
           <main>{children}</main>
           <footer  style={{
@@ -43,6 +39,8 @@ const Layout = ({ children }) => {
             <div style={{ display: "flex", textAlign:"center"}}> EatOut<br></br> © {new Date().getFullYear()} sva prava pridržana</div>
             <div style={{flex:1, maxWidth: `70px`}}><LogoFooter></LogoFooter></div>  
           </footer>
+        
+          </Col>
     </>
   )
 }
