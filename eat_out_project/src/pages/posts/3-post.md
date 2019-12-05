@@ -1,8 +1,12 @@
 ---
 title: 'Advent u Splitu'
-data: 02.12.2019
+data: 10.12.2019
 author: ' Marko Matić'
 path: '/third-post'
+image: ../../images/split3.png
+tags:
+ - advent
+ - split
 ---
 Odlično je počeo advent u Splitu. Sunce je u subotu puno “svita” izmamilo na Rivu do 19 adventskih kućica. Desetak ih je s pićem i “spizom”, a iako je ponuda raznolika, sve nude kuhano vino i hot dog.
 Značajno se razlikuju po cijeni i kvaliteti. Najjeftinije kuhano crno vino je 12, a najskuplje 22 kune. Razliku će osjetiti i manje iskusni poznavatelji: prvo je preslatko i vodenasto, a drugo punog okusa, od puno kvalitetnijeg vina kojem su dodani samo začini. Cijene piva su između 15 kuna za male boce najvećih hrvatskih proizvođača, preko 20 ili 25 kuna za pola litre domaćih ili stranih standardnih piva, do puno skupljih ljubiteljima piva dobro poznatih craft piva proizvedenih u malim serijama.

@@ -1,0 +1,30 @@
+.social-share-links {
+  ul {
+    display: inline-flex;
+    margin: 20px auto;
+
+    li {
+      margin: auto 20px;
+
+      a {
+        opacity: 0.6;
+        transition: all 0.1s ease-in;
+        &:hover {
+          opacity: 1;
+        }
+        &.facebook {
+          color: rgb(171, 172, 173);
+        }
+        &.twitter {
+          color: rgb(171, 172, 173);
+        }
+        &.google {
+          color: rgb(171, 172, 173);
+        }
+        &.linkedin {
+          color: rgb(171, 172, 173);
+        }
+      }
+    }
+  }
+}
