@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Logo from "./logo"
 
+
 const Header = ({ menuLinks, siteTitle }) => (
   <header
     style={{
@@ -16,7 +17,8 @@ const Header = ({ menuLinks, siteTitle }) => (
     }}
   >
      <div style={{ flex:1, maxWidth: `150px`}}>
-      <Logo></Logo>
+       <Link to = {'/'}> <Logo></Logo></Link>
+     
     </div>
       <div>
           <nav>
