@@ -1,0 +1,10 @@
+#pozadina * {
+  
+    background-image: url("../images/pocetna_slika.jpg");    
+}
+
+#prijava {
+    width: 50%;
+    height: 50%;
+    background-color: gray;
+}

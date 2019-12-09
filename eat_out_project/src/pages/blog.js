@@ -20,10 +20,10 @@ const Blog = () => (
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Post
-          key={node.id}
+           key={node.id}
            title={node.frontmatter.title}
            author={node.frontmatter.author}
-           path={node.frontmatter.path}
+           slug={node.fields.slug}
            date={node.frontmatter.data}
            body={node.excerpt}
            fluid={node.frontmatter.image.childImageSharp.fluid}
@@ -43,7 +43,7 @@ const Blog = () => (
 )
 
 const blogQuery = graphql`
-query{
+query blogQuery{
   allMarkdownRemark{
   edges{
     node{
@@ -52,7 +52,6 @@ query{
         title
         data
         author
-        path 
         tags
         image{
           childImageSharp{
@@ -61,6 +60,9 @@ query{
             }
           }
         }    
+      }
+      fields{
+        slug
       }
       excerpt
     }

@@ -2,7 +2,6 @@
 title: 'Dobri restorani'
 data: 02.12.2019
 author: ' Hrvoje Horvat'
-path: '/first-post'
 image: ../../images/split2.png
 tags:
  - split

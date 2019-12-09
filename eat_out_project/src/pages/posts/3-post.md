@@ -2,7 +2,6 @@
 title: 'Advent u Splitu'
 data: 10.12.2019
 author: ' Marko Matić'
-path: '/third-post'
 image: ../../images/split3.png
 tags:
  - advent
