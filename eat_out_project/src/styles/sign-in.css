@@ -1,10 +1,11 @@
-#pozadina * {
-  
-    background-image: url("../images/pocetna_slika.jpg");    
-}
 
-#prijava {
-    width: 50%;
-    height: 50%;
-    background-color: gray;
+#pozadina {
+    border: 2px solid black;
+    padding: 25px;
+    background-image: url("../images/pocetna_slika.jpg");    
+    background-repeat: no-repeat;
+  background-size: cover; 
+  resize: both;
+
+
 }

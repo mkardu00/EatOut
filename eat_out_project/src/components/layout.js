@@ -22,10 +22,9 @@ const Layout = ({ children }) => {
   `)
   return (
     <>
-     <Col md="12">
-  
+     <Col md="12"> 
        <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
-          <main>{children}</main>
+          <main style={{backgroundColor:"F5F5F5"}}>{children}</main>
           <footer  style={{
             fontSize: `60%`,
               height: `30px`,
