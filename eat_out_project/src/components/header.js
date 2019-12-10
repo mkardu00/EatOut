@@ -13,10 +13,9 @@ const Header = ({ menuLinks, siteTitle }) => (
       justifyContent:"space-between",
       margin: `0 auto`,
       padding: `0px 0rem 0rem`
-
     }}
   >
-     <div style={{ flex:1, maxWidth: `150px`}}>
+     <div style={{ flex:1, maxWidth: `160px`, paddingLeft:`10px`, paddingTop:`10px`}}>
        <Link to = {'/'}> <Logo></Logo></Link>
      
     </div>
