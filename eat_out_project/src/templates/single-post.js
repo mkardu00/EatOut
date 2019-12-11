@@ -13,6 +13,7 @@ const SinglePost = ({data}) =>{
     return(
         <Layout>
             <SEO title={post.title}/>
+            <br></br>
             <h1>{post.title}</h1>
             <Row>
                 <Col>

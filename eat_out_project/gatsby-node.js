@@ -24,14 +24,18 @@ exports.onCreateNode = ({ node, actions }) =>{
 exports.createPages = ({actions, graphql}) => {
     const { createPage } = actions;
     const singlePostTemplate = path.resolve('src/templates/single-post.js')
-  
+    const singleRestoranTemplate = path.resolve('src/templates/single-restoran.js')
+    
+
     return graphql(`
     {
-        allMarkdownRemark{
+       blogs: allMarkdownRemark(
+        filter: { fileAbsolutePath: { glob: "**/src/pages/posts/*.md" } }
+        ) {
             edges{
                 node{
                     frontmatter{
-                       author
+                       title
                     }
                     fields{
                         slug  
@@ -39,19 +43,50 @@ exports.createPages = ({actions, graphql}) => {
                 }
             }
         }
+        docs: allMarkdownRemark(
+            filter: { fileAbsolutePath: { glob: "**/src/pages/restorani/*.md" } }
+            ) {
+                edges{
+                    node{
+                        frontmatter{
+                            title
+                        }
+                        fields{
+                            slug  
+                        }  
+                    }
+                }
+            }
     }
-    `).then(res => {
-        if(res.errors) return Promise.reject(res.errors)
-        const posts = res.data.allMarkdownRemark.edges
+    `).then(result => {
+       
+        if(result.errors){
+             Promise.reject(result.errors)
+          
+        }
+        
 
-        posts.forEach(({node}) => {
-            createPage({
-                path: node.fields.slug,
+        // Create doc pages
+		result.data.docs.edges.forEach(({ node }) => {
+			createPage({
+				path: node.fields.slug,
+                component: singleRestoranTemplate,
+                context: {
+                    slug: node.fields.slug
+                }
+
+			});
+        });
+		// Create blog pages
+		result.data.blogs.edges.forEach(({ node }) => {
+			createPage({
+				path: node.fields.slug,
                 component: singlePostTemplate,
                 context: {
                     slug: node.fields.slug
                 }
-            })
-        })
-    })
-}
+
+			});
+		});
+	});
+};

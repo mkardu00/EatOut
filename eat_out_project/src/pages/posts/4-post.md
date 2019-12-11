@@ -1,5 +1,5 @@
 ---
-title: 'Split'
+title: 'Split i hrana'
 data: 11.12.2019
 author: ' Anita Antić'
 image: ../../images/split4.png

@@ -13,14 +13,16 @@ const SingleRestoran = ({data}) =>{
     return(
         <Layout>
             <SEO title={post.title}/>
+            <br></br>
             <h1>{post.title}</h1>
-            <Row>
-                <Col>
+            <Row> 
+                <Col md = "3">
+                    
                     <Card>
                     <Img className="card-image-top" fluid={post.image.childImageSharp.fluid}/>
                     <CardBody>
                         <CardSubtitle>
-                           
+                        <span className="text-info">{post.title}</span>
                         </CardSubtitle>
                         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}}/>
                         <ul className="post-tags">
@@ -49,8 +51,6 @@ export const postQuery = graphql`
             html
             frontmatter{
                 title
-                author
-                data
                 tags
                 image{
                     childImageSharp{

@@ -9,6 +9,7 @@ import { Row, Col} from "reactstrap"
 const Blog = () => (
   <Layout>
     <SEO title="Blog" />
+    <br></br>
     <h1>Blog</h1>
    <Row>
      <Col md="1"></Col>
