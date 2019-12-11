@@ -44,12 +44,12 @@ const SignIn = () => (
               <div id="noviKorisnik">
               <h2>Novi korisnik:</h2>
               <br></br>
-                <a href={'https://www.facebook.com'} className="btn btn-outline-secondary float-center" target="_blank" rel="noopener noreferrer" >Registracija putem Facebooka</a>
+                <a href={'https://www.facebook.com'} className="btn btn-outline-secondary float-center" target="_blank" rel="noopener noreferrer">REGISTRACIJA PUTEM FACEBOOKA</a>
                 <br></br>
                  <br></br>
                  <h4 style={{textAlign:'center'}}>ili</h4>
                  <br></br>
-                 <a href={'https://plus.google.com'} className="btn btn-outline-secondary float-center" target="_blank" rel="noopener noreferrer">Registracija putem Googlea</a>
+                 <a href={'https://plus.google.com'} className="btn btn-outline-secondary float-center" target="_blank" rel="noopener noreferrer">REGISTRACIJA PUTEM GOOGLEA</a>
                  </div>
             </Form>
            

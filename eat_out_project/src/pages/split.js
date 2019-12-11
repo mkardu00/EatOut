@@ -13,17 +13,12 @@ const Split = () => (
     <Form inline>
       <h1>Restorani u <Input type="text" name="city" id="exampleCity" bsSize="lg" value="Splitu"/></h1>
     </Form>
-   
-
-   <br></br>
-
+    <br></br>
     <Row>
-
-    
-        <Col md="2" id="Split" style={{backgroundColor:'#C0C0C0'}}>
-            <div ></div>
-        </Col>
-        <Col md="10" id="Split" style={{backgroundColor:'#DCDCDC', borderStyle:' 1px solid black'}}>
+      <Col md="2" id="Split" style={{backgroundColor:'F5F5F5'}}>
+        <div ></div>
+      </Col>
+      <Col md="10" id="Split" style={{backgroundColor:'#F5F5F5', borderStyle:' 1px solid black'}}>
         <StaticQuery
           query= {blogQuery1} 
           render={data => {
@@ -38,18 +33,14 @@ const Split = () => (
               fluid={node.frontmatter.image.childImageSharp.fluid}
               tags={node.frontmatter.tags}
               type={node.frontmatter.type}
-          />
-        ))}
-      </div>
-    )
-    }}
-    />
-        
-        </Col>
-     
+             />
+            ))}
+            </div>
+          )
+          }}
+         />
+       </Col>   
     </Row>
-    
-   
   </Layout>
 )
 const blogQuery1 = graphql`
