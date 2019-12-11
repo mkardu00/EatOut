@@ -3,6 +3,7 @@ title: 'Rustikalno ili moderno'
 data: 05.12.2019
 author: ' Iva Ivić'
 image: ../../images/split1.png
+type: 'post'
 tags:
  - restoran
  - jela

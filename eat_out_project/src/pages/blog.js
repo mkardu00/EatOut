@@ -44,7 +44,7 @@ const Blog = () => (
 
 const blogQuery = graphql`
 query blogQuery{
-  allMarkdownRemark{
+  allMarkdownRemark(filter: {frontmatter: {type: {eq: "post"}}}){
   edges{
     node{
       id
@@ -53,6 +53,7 @@ query blogQuery{
         data
         author
         tags
+        type
         image{
           childImageSharp{
             fluid(maxWidth: 600){

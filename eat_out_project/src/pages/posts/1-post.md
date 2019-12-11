@@ -3,6 +3,7 @@ title: 'Dobri restorani'
 data: 02.12.2019
 author: ' Hrvoje Horvat'
 image: ../../images/split2.png
+type: 'post'
 tags:
  - split
  - restoran

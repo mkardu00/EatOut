@@ -25,20 +25,19 @@ const Split = () => (
         </Col>
         <Col md="10" id="Split" style={{backgroundColor:'#DCDCDC', borderStyle:' 1px solid black'}}>
         <StaticQuery
-     query= {blogQuery1} 
-     render={data => {
-    return (
-      <div>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Restoran
-           key={node.id}
-           title={node.frontmatter.title}
-           author={node.frontmatter.author}
-           slug={node.fields.slug}
-           date={node.frontmatter.data}
-           body={node.excerpt}
-           fluid={node.frontmatter.image.childImageSharp.fluid}
-           tags={node.frontmatter.tags}
+          query= {blogQuery1} 
+          render={data => {
+           return (
+          <div>
+             {data.allMarkdownRemark.edges.map(({ node }) => (
+              <Restoran
+              key={node.id}
+              title={node.frontmatter.title}  
+              slug={node.fields.slug}
+              body={node.excerpt}
+              fluid={node.frontmatter.image.childImageSharp.fluid}
+              tags={node.frontmatter.tags}
+              type={node.frontmatter.type}
           />
         ))}
       </div>
@@ -55,15 +54,14 @@ const Split = () => (
 )
 const blogQuery1 = graphql`
 query blogQuery1{
-  allMarkdownRemark{
+  allMarkdownRemark(filter: {frontmatter: {type: {eq: "restoranST"}}}){
   edges{
     node{
       id
       frontmatter{
         title
-        data
-        author
         tags
+        type
         image{
           childImageSharp{
             fluid(maxWidth: 600){
