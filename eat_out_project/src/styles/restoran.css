@@ -1,0 +1,25 @@
+.card {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    
+  }
+  ul.post-tags {
+    padding: 0;
+    display: inline-flex;
+    list-style: none;
+  }
+  .btn-outline-secondary {
+    color: black;
+    border-color:black;
+    
+  }
+  .text-info {
+    color:black !important;
+    font-weight: bold;
+  }
+  .text-info-title {
+    color:black !important;
+    font-weight: bold;
+    font-size:x-large;
+  }
+  
