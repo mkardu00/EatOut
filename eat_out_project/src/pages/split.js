@@ -10,15 +10,18 @@ const Split = () => (
   <Layout>
     <SEO title="Split" />
     <br></br>
-    <Form inline>
-      <h1>Restorani u <Input type="text" name="city" id="exampleCity" bsSize="lg" value="Splitu"/></h1>
-    </Form>
+    <div id="grad">
+      <Form inline>   
+        <h1>Restorani u <Input type="text" name="city" id="exampleCity" bsSize="lg" value="Splitu"/></h1>
+      </Form>
+    </div>    
+   
     <br></br>
     <Row>
-      <Col md="2" id="Split" style={{backgroundColor:'F5F5F5'}}>
-        <div ></div>
+      <Col md="4" id="Split" style={{backgroundColor:'#F5F5F5'}}>
+        <div style={{position:'fixed', backgroundColor:'white'}} ><h1>fiksni stupac</h1></div>
       </Col>
-      <Col md="10" id="Split" style={{backgroundColor:'#F5F5F5', borderStyle:' 1px solid black'}}>
+      <Col md="8" id="Split" style={{backgroundColor:'#F5F5F5', borderStyle:' 1px solid black'}}>
         <StaticQuery
           query= {blogQuery1} 
           render={data => {

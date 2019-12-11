@@ -13,6 +13,15 @@ const Restoran = ({title,slug, fluid}) => {
             <Link to = {slug}>
                 <Img className="card-image-top" fluid={fluid} />
             </Link>
+            
+            <div id="star">  
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
            </Col>
            <Col md="6">
                 <CardBody>
@@ -21,10 +30,13 @@ const Restoran = ({title,slug, fluid}) => {
                     </CardTitle>
                     <CardSubtitle>
                          <br></br>
-                         <Link to={slug} className="btn btn-outline-secondary float-right">REZERVIRAJ</Link>
+                         <div id = "rezerviraj">
+                            <Link to={slug} className="btn btn-outline-secondary float-right">REZERVIRAJ</Link>
+                         </div>
                     </CardSubtitle>
                     <CardText>
-                        
+                       
+                      
                     </CardText> 
         
                  </CardBody>
