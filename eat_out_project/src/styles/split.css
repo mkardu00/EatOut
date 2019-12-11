@@ -1,4 +1,15 @@
 #Split {
-    border-style: solid;
+    
+    border-style: ridge;
+    border-width: 1px;
+    border-color: black;
 
+}
+
+#inputBotun {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }

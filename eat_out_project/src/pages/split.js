@@ -1,17 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Row, Col} from "reactstrap"
-import { Badge } from 'reactstrap';
+import { Row, Col,Input, Form} from "reactstrap"
 import "../styles/split.css"
 
 const Split = () => (
   <Layout>
     <SEO title="Split" />
     <br></br>
-    <h1>Restorani u <input id="unos" value="Splitu"  ></input></h1>
-    
-  
+    <Form inline>
+      <h1>Restorani u <Input type="text" name="city" id="exampleCity" bsSize="lg" value="Splitu"/></h1>
+    </Form>
+   
 
    <br></br>
 

@@ -32,7 +32,7 @@ const Post = ({title, author, slug, date, body, fluid, tags}) => {
            ))}
         </ul>
 
-        <Link to={slug} className="btn btn-outline-secondary float-right">Pročitaj više</Link>
+        <Link to={slug} className="btn btn-outline-secondary float-right">PROČITAJ VIŠE</Link>
         </CardBody>
      </Card>
    ) 
