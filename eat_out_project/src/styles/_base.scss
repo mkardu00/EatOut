@@ -1,10 +1,7 @@
 .container#content {
   margin-top: 60px;
 }
-body {
-  background-color: $white;
- 
-}
+
 
 a {
   color: #ffffff;
@@ -17,7 +14,7 @@ a {
 h1 {
   margin-bottom: 10px;
   text-align: center;
-  color: #ffffff;
+  color: black;
 }
 .navbar {
   background-color: white;
@@ -36,4 +33,11 @@ h1 {
 ul {
   list-style: none;
   padding: 0;
+}
+
+header {
+  
+  border-style: ridge;
+  border-width: 1px;
+  border-color: black;
 }

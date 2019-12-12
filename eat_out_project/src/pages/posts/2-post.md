@@ -2,10 +2,10 @@
 title: 'Rustikalno ili moderno'
 data: 05.12.2019
 author: ' Iva Ivić'
-path: '/second-post'
 image: ../../images/split1.png
+type: 'post'
 tags:
- - restorn
+ - restoran
  - jela
 ---
 Nakon što se stiša splitski šušur, a kamene ulice i trgovi ponovno dođu do izražaja nakon ljetnih gužvi, pravo je vrijeme za sunčanje na rivi uz čašu ili šalicu omiljenog pića i isprobavanje domaće kuhinje. Rustikalno ili moderno, tradicionalno ili inovativno izbor je o kojem odlučuje svatko za sebe...

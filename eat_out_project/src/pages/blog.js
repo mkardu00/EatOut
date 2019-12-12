@@ -9,6 +9,7 @@ import { Row, Col} from "reactstrap"
 const Blog = () => (
   <Layout>
     <SEO title="Blog" />
+    <br></br>
     <h1>Blog</h1>
    <Row>
      <Col md="1"></Col>
@@ -20,10 +21,10 @@ const Blog = () => (
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Post
-          key={node.id}
+           key={node.id}
            title={node.frontmatter.title}
            author={node.frontmatter.author}
-           path={node.frontmatter.path}
+           slug={node.fields.slug}
            date={node.frontmatter.data}
            body={node.excerpt}
            fluid={node.frontmatter.image.childImageSharp.fluid}
@@ -43,8 +44,8 @@ const Blog = () => (
 )
 
 const blogQuery = graphql`
-query{
-  allMarkdownRemark{
+query blogQuery{
+  allMarkdownRemark(filter: {frontmatter: {type: {eq: "post"}}}){
   edges{
     node{
       id
@@ -52,8 +53,8 @@ query{
         title
         data
         author
-        path 
         tags
+        type
         image{
           childImageSharp{
             fluid(maxWidth: 600){
@@ -61,6 +62,9 @@ query{
             }
           }
         }    
+      }
+      fields{
+        slug
       }
       excerpt
     }
