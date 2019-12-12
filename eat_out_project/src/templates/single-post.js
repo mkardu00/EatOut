@@ -6,17 +6,16 @@ import { Badge,Row, Col, CardBody, CardSubtitle, Card} from "reactstrap"
 import Img from "gatsby-image"
 import { slugify } from "../util/utilityFunctions"
 
-
 const SinglePost = ({data}) =>{
-    const post = data.markdownRemark.frontmatter
-    
+    const post = data.markdownRemark.frontmatter    
     return(
         <Layout>
             <SEO title={post.title}/>
             <br></br>
             <h1>{post.title}</h1>
             <Row>
-                <Col>
+                <Col md ="2"></Col>
+                <Col md = "8">
                     <Card>
                     <Img className="card-image-top" fluid={post.image.childImageSharp.fluid}/>
                     <CardBody>
@@ -37,11 +36,10 @@ const SinglePost = ({data}) =>{
                     </CardBody>
                     </Card>
                 </Col>
+                <Col md ="2"></Col>
             </Row>
         </Layout>
-
     )
-
 }
 
 export const postQuery = graphql`

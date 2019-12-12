@@ -12,7 +12,8 @@ const Split = () => (
     <br></br>
     <div id="grad">
       <Form inline>   
-        <h1>Restorani u <Input type="text" name="city" id="exampleCity" bsSize="lg" value="Splitu" readOnly/></h1>
+        <h1>Restorani u <Input type="text" name="city" id="exampleCity"
+         bsSize="lg" value="Splitu" readOnly/></h1>
       </Form>
     </div>    
    

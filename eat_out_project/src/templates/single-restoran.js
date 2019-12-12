@@ -1,10 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql, Link } from "gatsby"
+import { graphql} from "gatsby"
 import SEO from "../components/seo"
-import { Badge,Row, Col, CardBody, CardSubtitle, Card} from "reactstrap"
+import {Row, Col, Form,Input} from "reactstrap"
 import Img from "gatsby-image"
-import { slugify } from "../util/utilityFunctions"
+
+import "../styles/restoran.css"
 
 
 const SingleRestoran = ({data}) =>{
@@ -13,35 +14,35 @@ const SingleRestoran = ({data}) =>{
     return(
         <Layout>
             <SEO title={post.title}/>
+            <Row>
+                <Col>
             <br></br>
-            <h1>{post.title}</h1>
-            <Row> 
-                <Col md = "3">
-                    
-                    <Card>
-                    <Img className="card-image-top" fluid={post.image.childImageSharp.fluid}/>
-                    <CardBody>
-                        <CardSubtitle>
-                        <span className="text-info">{post.title}</span>
-                        </CardSubtitle>
-                        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}}/>
-                        <ul className="post-tags">
-                            {post.tags.map(tag => (
-                                <li key={tag}>
-                                    <Link to={`/tag/${slugify(tag)}`}>
-                                    <Badge color="secondary">{tag}</Badge>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </CardBody>
-                    </Card>
+            
+            <div id="grad">
+                <Form inline>   
+                    <h1>Restorani u <Input type="text" name="city" id="exampleCity"
+                     bsSize="lg" value="Splitu" readOnly/></h1>
+                </Form>
+             </div>
+             <div id="slikaRestorana">
+                <Img className="card-image-top" fluid={post.image.childImageSharp.fluid}/>
+             </div>    
+            <br></br>
+            </Col>
+            </Row>
+            <Row>
+                <Col md = "8" id="opisRestorana">
+                  <h1>{post.title}</h1>
+                    <span className="text-info">{post.title}</span>
+                     <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}}/>
+                </Col>
+                <Col md = "4" id="opisRestorana">                   
+                   <div id = "napraviRezervaciju" style={{position:'fixed'}}>
+                       <p>odi ce se nalazit forma zaregistraciju</p></div>
                 </Col>
             </Row>
         </Layout>
-
     )
-
 }
 
 export const postQuery = graphql`
