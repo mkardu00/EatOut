@@ -1,46 +1,60 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Logo from "./logo"
+
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink
+} from 'reactstrap';
 
 
-const Header = ({ menuLinks, siteTitle }) => (
-  <header
-    style={{
-      background: `white`,
-      color: `black`,
-      display: "flex",
-      justifyContent:"space-between",
-      margin: `0 auto`,
-      padding: `0px 0rem 0rem`
-    }}
-  >
-     <div style={{ flex:1, maxWidth: `160px`, paddingLeft:`10px`, paddingTop:`10px`}}>
-       <Link to = {'/'}> <Logo></Logo></Link>
-     
-    </div>
+class Header extends React.Component{
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+    isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen,
+    })
+  }
+
+  render() {
+    return (
       <div>
-          <nav>
-            <ul style={{ display: "flex"}}>
-              {menuLinks.map(link => (
-                <li
-                  key={link.name}
-                  style={{
-                    listStyleType: `none`,
-                    padding: `1rem`,
-                  }}
-                >
-                  <Link style={{ color: `black`}} to={link.link}>
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-    
-  </header>
-)
+        <Navbar fixed="top" light expand="sm">
+          <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/">POČETNA</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/blog">BLOG</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/about">O NAMA</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/sign-in">PRIJAVA</NavLink>
+              </NavItem>
+                       
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+    }
+  }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
