@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
 import React from "react"
-import LogoFooter from "./logo_footer"
 import {
   Collapse,
   Navbar,

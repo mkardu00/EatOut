@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import {Row, Col, Form,Input, FormGroup,Label} from "reactstrap"
 import Img from "gatsby-image"
 import "../styles/restoran.css"
+import Meni from "./meni"
 
 
 const SingleRestoran = ({data}) =>{
@@ -18,25 +19,27 @@ const SingleRestoran = ({data}) =>{
             <br></br>
             
             <div id="grad">
-                <Form inline>   
-                    <h1>Restorani u <Input type="text" name="city" id="exampleCity"
-                     bsSize="lg" value="Splitu" readOnly/></h1>
-                </Form>
+            
+                    <h1>Restorani u Splitu</h1>
+               
              </div>
              <div id="slikaRestorana">
                 <Img className="card-image-top" fluid={post.image.childImageSharp.fluid}/>
-             </div>    
-            <br></br>
+             </div>   
             </Col>
             </Row>
             <Row>
                 <Col md = "8" id="opisRestorana">
+                       <Meni></Meni>
                   <h1>{post.title}</h1>
-                    <span className="text-info">{post.title}</span>
+                    <span className="text-info"></span>
                      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}}/>
                 </Col>
-                <Col md = "4" id="opisRestorana">                   
-                   <div id = "napraviRezervaciju">
+                <Col md = "4" id="rezervacija">                   
+                   <div id = "napraviRezervaciju" >
+                       <div style={{ textAlign:"center"}}><h5>NAPRAVI REZERVACIJU</h5>
+                           </div>
+                 
                    <Form>
                    <FormGroup>
                         <Label for="exampleDate">Datum</Label>

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Row, Col,Input, Form} from "reactstrap"
+import { Row, Col} from "reactstrap"
 import "../styles/split.css"
 import { graphql, StaticQuery } from "gatsby"
 import Restoran from "../components/Restoran"
@@ -11,10 +11,9 @@ const Split = () => (
     <SEO title="Split" />
     <br></br>
     <div id="grad">
-      <Form inline>   
-        <h1>Restorani u <Input type="text" name="city" id="exampleCity"
-         bsSize="lg" value="Splitu" readOnly/></h1>
-      </Form>
+         
+        <h1>RESTORANI U SPLITU</h1>
+ 
     </div>    
    
     <br></br>

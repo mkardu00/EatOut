@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import SEO from "../components/seo"
-import { Badge,Row, Col, CardBody, CardSubtitle, Card} from "reactstrap"
+import {Row, Col, CardBody, CardSubtitle, Card} from "reactstrap"
 import Img from "gatsby-image"
-import { slugify } from "../util/utilityFunctions"
+
 
 const SinglePost = ({data}) =>{
     const post = data.markdownRemark.frontmatter    

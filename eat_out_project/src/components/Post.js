@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from 'gatsby'
-import {Badge,Card, CardTitle, CardText, CardSubtitle, CardBody } from 'reactstrap'
+import {Card, CardTitle, CardText, CardSubtitle, CardBody } from 'reactstrap'
 import "../styles/index.scss"
 import Img from "gatsby-image"
-import { slugify } from "../util/utilityFunctions"
+
 
 const Post = ({title, author, slug, date, body, fluid, tags}) => {
    return(
@@ -13,7 +13,7 @@ const Post = ({title, author, slug, date, body, fluid, tags}) => {
         </Link>
         <CardBody>
             <CardTitle>
-            <Link to={slug}>{title}</Link>     
+               
         </CardTitle>
         <CardSubtitle>
         <span className="text-info-title">{title}</span>
