@@ -2,9 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql} from "gatsby"
 import SEO from "../components/seo"
-import {Row, Col, Form,Input} from "reactstrap"
+import {Row, Col, Form,Input, FormGroup,Label} from "reactstrap"
 import Img from "gatsby-image"
-
 import "../styles/restoran.css"
 
 
@@ -37,8 +36,41 @@ const SingleRestoran = ({data}) =>{
                      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}}/>
                 </Col>
                 <Col md = "4" id="opisRestorana">                   
-                   <div id = "napraviRezervaciju" style={{position:'fixed'}}>
-                       <p>odi ce se nalazit forma zaregistraciju</p></div>
+                   <div id = "napraviRezervaciju">
+                   <Form>
+                   <FormGroup>
+                        <Label for="exampleDate">Datum</Label>
+                        <Input
+                        type="date"
+                        name="date"
+                        id="exampleDate"
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="exampleTime">Vrijeme</Label>
+                        <Input
+                        type="time"
+                        name="time"
+                        id="exampleTime"
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="exampleSelect">Broj osoba</Label>
+                        <Input type="select" name="select" id="exampleSelect">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        </Input>
+                    </FormGroup>
+                    </Form>
+                    </div>
                 </Col>
             </Row>
         </Layout>

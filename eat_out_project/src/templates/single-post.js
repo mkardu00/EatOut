@@ -24,15 +24,7 @@ const SinglePost = ({data}) =>{
                             <span className="text-info">{post.author}</span>
                         </CardSubtitle>
                         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}}/>
-                        <ul className="post-tags">
-                            {post.tags.map(tag => (
-                                <li key={tag}>
-                                    <Link to={`/tag/${slugify(tag)}`}>
-                                    <Badge color="secondary">{tag}</Badge>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
+                     
                     </CardBody>
                     </Card>
                 </Col>
