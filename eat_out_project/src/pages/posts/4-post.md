@@ -5,7 +5,7 @@ author: ' Anita Antić'
 image: ../../images/split4.png
 type: 'post'
 tags:
- - novi restoran
+ - riva
  - split
 ---
 Baš u jeku turističke sezone, Split je dobio još jedno mjesto za gastronomsko uživanje. I to na jednoj od najboljih lokacija u gradu – u južnom zidu Dioklecijanove palače, s pogledom na rivu i more. ZOI je koncipiran kao fine dining restoran čiji je adut svakako njegova prekrasna terasa. Na njoj obećavaju uživanje u svim delicijama chefa koje će nuditi, kao i probranu vinsku i pivsku kartu.

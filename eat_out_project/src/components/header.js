@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-
+import LogoFooter from "./logo_footer"
 import {
   Collapse,
   Navbar,
@@ -32,6 +32,7 @@ class Header extends React.Component{
       <div>
         <Navbar fixed="top" light expand="sm">
           <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
+          
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -46,8 +47,7 @@ class Header extends React.Component{
               </NavItem>
               <NavItem>
                 <NavLink href="/sign-in">PRIJAVA</NavLink>
-              </NavItem>
-                       
+              </NavItem>         
             </Nav>
           </Collapse>
         </Navbar>
