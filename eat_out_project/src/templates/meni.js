@@ -36,23 +36,15 @@ const Meni = (props) => {
             GALRIJA
           </NavLink>
           </NavItem>
-          <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === '4' })}
-            onClick={() => { toggle('4'); }}
-          >
-            KOMENTARI
-          </NavLink>
-        </NavItem>
-      </Nav>
+           </Nav>
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
           <Row>
             <Col sm="12">
             <Card body>
-                <CardTitle>Special Title 111</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
+                <CardTitle>1</CardTitle>
+                <CardText>INFO</CardText>
+                
               </Card>
             </Col>
           </Row>
@@ -62,33 +54,19 @@ const Meni = (props) => {
         
             <Col sm="12">
               <Card body>
-                <CardTitle>Special Title 222</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
+                <CardTitle>2</CardTitle>
+                <CardText>MENU</CardText>
               </Card>
             </Col>
-          
-            
           </Row>
         </TabPane>
         <TabPane tabId="3">
           <Row>
             <Col sm="12">
             <Card body>
-                <CardTitle>Special Title 333</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
-              </Card>
-            </Col>
-          </Row>
-        </TabPane>
-        <TabPane tabId="4">
-          <Row>
-            <Col sm="12">
-            <Card body>
-                <CardTitle>Special Title 444</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
+                <CardTitle>3</CardTitle>
+                <CardText>GALRIJA</CardText>
+
               </Card>
             </Col>
           </Row>
