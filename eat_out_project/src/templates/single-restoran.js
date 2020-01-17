@@ -10,7 +10,6 @@ import Meni from "./meni"
 
 const SingleRestoran = ({data}) =>{
     const post = data.markdownRemark.frontmatter
-    
     return(
         <Layout>
             <SEO title={post.title}/>
@@ -18,10 +17,8 @@ const SingleRestoran = ({data}) =>{
                 <Col>
             <br></br>
             
-            <div id="grad">
-            
-                    <h1>Restorani u Splitu</h1>
-               
+            <div id="grad">   
+                    <h1>Restorani u Splitu</h1>             
              </div>
              <div id="slikaRestorana">
                 <Img className="card-image-top" fluid={post.image.childImageSharp.fluid}/>
