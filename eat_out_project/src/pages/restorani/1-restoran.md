@@ -8,4 +8,4 @@ tags:
  - mediteranska kuhinja
  - Split
 ---
-Perivoj je smješten u rekonstruiranoj secesijskoj vili s velikom ljetnom terasom idealnom i za jutarnja ispijanja kave uz slastice poput veoma dobre bourbon- čokoladne torte ili za večernje koktele. Nakon odlaska chefa Marka Gajskog i slastičarke Tee Mamut koji su “otvorili” restoran i stvorili mu ime, promijenjen je koncept pa sad restoran nudi i “gourmet pizze”. Ipak, zadržan je i dio ranije stilistike s naglaskom na izvedbama tradicijske dalmatinske/mediteranske kuhinje.
+Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Nisi quis eleifend quam adipiscing. Ut lectus arcu bibendum at. Mauris vitae ultricies leo integer malesuada nunc vel. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Lectus mauris ultrices eros in cursus turpis massa tincidunt dui. Velit aliquet sagittis id consectetur purus. Sed elementum tempus egestas sed sed risus pretium quam. Interdum posuere lorem ipsum dolor

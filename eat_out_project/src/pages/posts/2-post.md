@@ -1,13 +1,13 @@
 ---
-title: 'Rustikalno ili moderno'
+title: 'Maecenas sed'
 data: 05.12.2019
 author: ' Iva Ivić'
-image: ../../images/split1.png
+image: ../../images/split2.png
 type: 'post'
 tags:
- - restoran
- - jela
+ - enim
+ - aliquet
 ---
-Nakon što se stiša splitski šušur, a kamene ulice i trgovi ponovno dođu do izražaja nakon ljetnih gužvi, pravo je vrijeme za sunčanje na rivi uz čašu ili šalicu omiljenog pića i isprobavanje domaće kuhinje. Rustikalno ili moderno, tradicionalno ili inovativno izbor je o kojem odlučuje svatko za sebe...
-Jedan od najnagrađivanijih hrvatskih kuhara Zlatko Marinović neraskidivu vezu s morem predstavlja u Noštromu, restoranu gdje je jelovnik nadahnut dobrim starim receptima dalmatinske kuhinje. Ovisno o željama, kod Marinovića se uživa u jastogu, ribi prve klase – ali i rižotu od priljepaka, vlasuljama te ježincima s tjesteninom. Poslužuju se jela ribara poput tradicionalne juhe, gregade, ali i modernije inačice specijaliteta, kao što su njoki punjeni repovima rakova. Jedan je od specijaliteta kuće fritaja sa škampima i pastom od tartufa. Kućno vino sasvim je solidno, a isplati se kušati i domaću rakiju od mora kojom se Zlatko Marinović ponosi. Valja imati na umu da je Noštromo stara škola kad je riječ o načinima plaćanja jer kartice ne prima.
-Odlične namirnice, domaća spiza i pristupačne cijene i više su nego dobri razlozi za posjet Pimpinelli,konobi koja se nalazi na Firulama. Terasa s nekoliko stolova ljeti je u hladu i priziva na ispijanje gemišta, bevande ili vina, a obiteljski ugođaj nudi u unutrašnjosti. Kako je zovu, mala gostionica velikog srca poznata je po maestralno pripremljenim njokima, pašticadi, rižotima i telećim koljenicama,punjenim paprikama, pivcu u prošeku te školjkama s gradela. Ugođaj dnevnog borakva Pimpinella duguje uređenju s kockastim stolnjacima i osoblju koje je često ljubazno. Ponekad malo više, osobito ako nije vrhunac sezone ili navrate poznati gosti. No osmijeh koji izaziva čarolija na tanjuru najljepša je poruka dobrodošlice.
+Maecenas sed enim ut sem viverra aliquet eget sit amet. Nisl purus in mollis nunc sed id semper risus. Tristique risus nec feugiat in fermentum posuere. Id semper risus in hendrerit gravida rutrum quisque non tellus. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Sed velit dignissim sodales ut. In fermentum posuere urna nec tincidunt. Aliquam sem et tortor consequat id porta. Nisi est sit amet facilisis magna etiam tempor. Vitae justo eget magna fermentum iaculis eu non. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Tincidunt arcu non sodales neque sodales ut. Est sit amet facilisis magna. Dui nunc mattis enim ut tellus elementum sagittis vitae et. Elementum curabitur vitae nunc sed.
+
+Hendrerit dolor magna eget est lorem ipsum dolor. Nam at lectus urna duis convallis convallis tellus id interdum. Mauris a diam maecenas sed enim. Massa massa ultricies mi quis. Semper risus in hendrerit gravida rutrum quisque. Venenatis cras sed felis eget velit. A diam sollicitudin tempor id eu nisl nunc. Id diam maecenas ultricies mi. Nunc non blandit massa enim nec dui nunc mattis enim. Accumsan sit amet nulla facilisi morbi tempus iaculis. Odio ut enim blandit volutpat maecenas. Amet justo donec enim diam vulputate ut pharetra sit amet. Enim nunc faucibus a pellentesque sit amet porttitor.

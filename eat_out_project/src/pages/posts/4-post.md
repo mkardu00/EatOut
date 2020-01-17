@@ -1,12 +1,13 @@
 ---
-title: 'Split i hrana'
+title: 'Porta nibh'
 data: 11.12.2019
 author: ' Anita Antić'
 image: ../../images/split4.png
 type: 'post'
 tags:
- - riva
- - split
+ - venenatis
+ - eget
 ---
-Baš u jeku turističke sezone, Split je dobio još jedno mjesto za gastronomsko uživanje. I to na jednoj od najboljih lokacija u gradu – u južnom zidu Dioklecijanove palače, s pogledom na rivu i more. ZOI je koncipiran kao fine dining restoran čiji je adut svakako njegova prekrasna terasa. Na njoj obećavaju uživanje u svim delicijama chefa koje će nuditi, kao i probranu vinsku i pivsku kartu.
-Carev triklinij (blagovaonica) nekada se nalazio upravo pored restorana, što ovom mjestu daje posebnu povijesnu energiju za uživanje u sofisticiranim jelima, vinu, filozofskim raspravama i veselju. Okruženje je to staro 1700 godina, u kojem se stapaju povijest, strast i hrana. Povijest Splita je kamen temeljac iz kojega je niknula ideja o nastanku ovog kreativnog restorana. Split je oduvijek bio sjecište mnogih carstava te samim time i dio mnogih kultura. Sama riječ ZOI dolazi od grčke riječi za život, a odnosi se na kraljeve, vojnike, trgovce, robove i sve koji su ostavili svoj trag te na taj način oblikovali život grada Splita. Restoran ZOI, u kolijevci povijesti grada Splita, nastoji ispričati priču o bogatoj kulturi grada i izvući najbolje od svake kulture koja je nekada davno postojala na tom području.
+Porta nibh venenatis cras sed felis eget velit aliquet sagittis. Et malesuada fames ac turpis. Amet nisl suscipit adipiscing bibendum. Pretium vulputate sapien nec sagittis aliquam malesuada. Dui sapien eget mi proin sed. Tincidunt lobortis feugiat vivamus at augue eget. Facilisi morbi tempus iaculis urna. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Platea dictumst quisque sagittis purus. Non nisi est sit amet facilisis. Nullam vehicula ipsum a arcu cursus vitae congue mauris. Risus viverra adipiscing at in. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam quisque id diam vel quam elementum pulvinar etiam non. Morbi blandit cursus risus at ultrices mi tempus. Pellentesque habitant morbi tristique senectus et.
+
+Orci a scelerisque purus semper eget duis. Dolor morbi non arcu risus quis varius. Faucibus ornare suspendisse sed nisi lacus sed viverra. Volutpat odio facilisis mauris sit amet massa. Massa ultricies mi quis hendrerit dolor magna. Aliquet risus feugiat in ante metus dictum at tempor commodo. Lacus sed turpis tincidunt id aliquet risus feugiat in ante. Arcu non odio euismod lacinia. Cras adipiscing enim eu turpis. Mollis nunc sed id semper risus in. Volutpat blandit aliquam etiam erat velit. Ultrices sagittis orci a scelerisque. Ullamcorper morbi tincidunt ornare massa eget. Felis bibendum ut tristique et egestas quis. Risus pretium quam vulputate dignissim suspendisse in est.
