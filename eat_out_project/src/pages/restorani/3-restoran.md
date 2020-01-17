@@ -8,4 +8,4 @@ tags:
  - mediteranska kuhinja
  - Split
 ---
-Mediteranski restoran Augubio Congo smješten je u istoimenoj palači na korak-dva od Peristila, sa sjajno pogođenim interijerom i pitoresknim dvorištem. Chef Željan Radosavljević rukovodi se sezonskim namirnicama koje određuju menu (s prigodnim tjednim jelovnicima), no svojevrsna konstanta su domaća tijesta, steakovi tune, fileti ribe, tartar od tune, juha od školjki ili kozica s tartufom... i vrhunska mesa. Solidna vinska karta oplemenjena je i ponudom craft piva s pouzdanim mamcem za pivoljupce poput ReAle, Duchesse ili My Antonia.
+Porttitor massa id neque aliquam vestibulum morbi blandit. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Vitae auctor eu augue ut lectus. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Dui id ornare arcu odio ut sem. Volutpat ac tincidunt vitae semper quis. Pellentesque diam volutpat commodo sed egestas. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Ultricies tristique nulla aliquet enim. Morbi tincidunt augue interdum velit euismod.
