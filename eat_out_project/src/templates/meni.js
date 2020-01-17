@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Card, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 
 const Meni = (props) => {
@@ -65,7 +65,7 @@ const Meni = (props) => {
             <Col sm="12">
             <Card body>
                 <CardTitle>3</CardTitle>
-                <CardText>GALRIJA</CardText>
+                <CardText>KOMENTARI</CardText>
 
               </Card>
             </Col>

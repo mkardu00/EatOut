@@ -11,6 +11,7 @@ const IndexPage = () => (
     <SEO title="Pocetna" />
     <div id="pocetnaSlikaDiv">
       <Image></Image>
+ 
     </div>
     <div id="rezervirajSvojStolDiv">
       <h1 id="naslov">Rezerviraj svoj stol </h1> 
