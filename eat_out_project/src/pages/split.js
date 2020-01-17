@@ -18,15 +18,15 @@ const Split = () => (
    
     <br></br>
     <Row>
-      <Col md="4" id="Split" style={{backgroundColor:'#F5F5F5'}}>
-        <div style={{position:'fixed', backgroundColor:'white'}} ><h1>fiksni stupac</h1></div>
+      <Col md="4" id="Split" style={{backgroundColor:'white'}}>
+        <div style={{position:'fixed', backgroundColor:'whitesmoke'}} ><h1>fiksni stupac</h1></div>
       </Col>
-      <Col md="8" id="Split" style={{backgroundColor:'#F5F5F5', borderStyle:' 1px solid black'}}>
+      <Col md="8" id="Split" style={{backgroundColor:'white', borderStyle:' 1px solid black'}}>
         <StaticQuery
           query= {blogQuery1} 
           render={data => {
            return (
-          <div>
+            <div class="card-columns">  
              {data.allMarkdownRemark.edges.map(({ node }) => (
               <Restoran
               key={node.id}
@@ -38,7 +38,9 @@ const Split = () => (
               type={node.frontmatter.type}
              />
             ))}
-            </div>
+             
+            
+             </div>
           )
           }}
          />
