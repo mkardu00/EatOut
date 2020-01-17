@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import LogoFooter from "./logo_footer"
 import Header from "./header"
 import { Col} from "reactstrap"
 import "../styles/index.scss"
@@ -31,7 +30,7 @@ const Layout = ({ children }) => {
           <footer  style={{
             fontSize: `60%`,
               height: `30px`,
-              width: `100%`,
+             
               background: `black`,
               marginBottom: `1.45rem`,
               color: `white`,
@@ -40,9 +39,9 @@ const Layout = ({ children }) => {
               margin: `0 auto`,
               padding: `0px 0rem 0rem`}}
               >
-            <div style={{ flex:1, maxWidth: `42px`}}><LogoFooter></LogoFooter> </div>
+            <div style={{ flex:1, maxWidth: `42px`}}> </div>
             <div style={{ display: "flex", textAlign:"center"}}> EatOut<br></br> © {new Date().getFullYear()} sva prava pridržana</div>
-            <div style={{flex:1, maxWidth: `42px`}}><LogoFooter></LogoFooter></div>  
+            <div style={{flex:1, maxWidth: `42px`}}></div>  
           </footer>
         
           </Col>
