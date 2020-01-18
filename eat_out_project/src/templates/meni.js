@@ -33,7 +33,7 @@ const Meni = (props) => {
             className={classnames({ active: activeTab === '3' })}
             onClick={() => { toggle('3'); }}
           >
-            GALRIJA
+            KOMENTARI
           </NavLink>
           </NavItem>
            </Nav>

@@ -7,7 +7,6 @@ import Img from "gatsby-image"
 import "../styles/restoran.css"
 import Meni from "./meni"
 
-
 const SingleRestoran = ({data}) =>{
     const post = data.markdownRemark.frontmatter
     return(
@@ -34,7 +33,7 @@ const SingleRestoran = ({data}) =>{
                 </Col>
                 <Col md = "4" id="rezervacija">                   
                    <div id = "napraviRezervaciju" >
-                       <div style={{ textAlign:"center"}}><h5>NAPRAVI REZERVACIJU</h5>
+                       <div ><h5>NAPRAVI REZERVACIJU</h5>
                            </div>
                  
                    <Form>
@@ -68,7 +67,10 @@ const SingleRestoran = ({data}) =>{
                         <option>9</option>
                         <option>10</option>
                         </Input>
+
                     </FormGroup>
+                    <div id="rezervirajBotun" >
+                    <button className="btn btn-outline-secondary float-left">REZERVIRAJ</button></div>
                     </Form>
                     </div>
                 </Col>
