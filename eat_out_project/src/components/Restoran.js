@@ -13,7 +13,7 @@ const Restoran = ({title,slug, fluid}) => {
         
            
                 <Img className="card-image-top" fluid={fluid} />
-            
+         
 
             <div id="star">  
                             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>

@@ -43,8 +43,26 @@ const Meni = (props) => {
           <Row>
             <Col sm="12">
             <Card body>
-                <CardTitle>1</CardTitle>
-                <CardText>INFO</CardText>
+                <CardTitle> <div id="ikonice">
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+             <p>
+                 <span className="fa fa-star checked"></span>
+                 <span className="fa fa-star checked"></span>
+                 <span className="fa fa-star checked"></span>
+                 <span className="fa fa-star checked"></span>
+                 <span className="fa fa-star"></span> 
+                 </p>
+                 <p><i class="fa fa-phone"></i><b> 021/552453</b></p>
+                 <p><i class="fa fa-clock-o"></i><b> 10:00–01:00 </b></p>
+                 <p><i class="fa fa-envelope"></i><b> naziv_restorana@gmail.com </b></p>
+                 <p><i class="fa fa-map-marker"></i><b> Ruđera Boškovića 32 </b></p>
+
+                  </div></CardTitle>
+                <CardText>
+                  
+                  
+                  
+                </CardText>
                 
                </Card>
             </Col>
@@ -125,7 +143,9 @@ const Meni = (props) => {
           <Row>
             <Col sm="12">
             <Card body>
-                <CardTitle></CardTitle>
+                <CardTitle>   <p><b>32 </b>
+                 <i class="fa fa-comment"></i>
+                 </p></CardTitle>
                 <CardText>
                 
                   <p><i class="fa fa-comment"></i><b> Andrea</b><br></br>

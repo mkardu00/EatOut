@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql} from "gatsby"
 import SEO from "../components/seo"
-import {Row, Col, Form,Input, FormGroup,Label} from "reactstrap"
+import {Row, Col, Form,Input, FormGroup,Label,Card} from "reactstrap"
 import Img from "gatsby-image"
 import "../styles/restoran.css"
 import Meni from "./meni"
@@ -21,28 +21,24 @@ const SingleRestoran = ({data}) =>{
              </div>
              <div id="slikaRestorana">
                 <Img className="card-image-top" fluid={post.image.childImageSharp.fluid}/>
-             </div>  
-             <div id="ikonice">
-                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-                 <span className="fa fa-star checked"></span>
-                 <span className="fa fa-star checked"></span>
-                 <span className="fa fa-star checked"></span>
-                 <span className="fa fa-star checked"></span>
-                 <span className="fa fa-star"></span>
-                 <i class="fa fa-comment"></i>
-                  </div>
+             </div> 
+            
+           
               
              
             </Col>
             </Row>
             <Row>
                 <Col md = "8" id="opisRestorana">
+               
                        <Meni></Meni>
                   
                     <span className="text-info"></span>
                      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}}/>
                 </Col>
-                <Col md = "4" id="rezervacija">                   
+              
+                <Col md = "4" id="rezervacija">   
+                <Card>                
                    <div id = "napraviRezervaciju" >
                        <div style={{ textAlign:"center"}}><h5>NAPRAVI REZERVACIJU</h5>
                            </div>
@@ -84,7 +80,9 @@ const SingleRestoran = ({data}) =>{
                     <button className="btn btn-outline-secondary float-left">REZERVIRAJ</button></div>
                     </Form>
                     </div>
+                    </Card>
                 </Col>
+                
             </Row>
         </Layout>
     )
