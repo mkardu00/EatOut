@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
        <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
           <div className="container" id="content"></div>
           <main style={{backgroundColor:"F5F5F5"}}>{children}</main>
-          
+          </Col>
           <footer  style={{
             fontSize: `60%`,
               height: `30px`,
@@ -39,12 +39,12 @@ const Layout = ({ children }) => {
               margin: `0 auto`,
               padding: `0px 0rem 0rem`}}
               >
-            <div style={{ flex:1, maxWidth: `42px`}}> </div>
+            <div style={{ flex:1}}> </div>
             <div style={{ display: "flex", textAlign:"center"}}> EatOut<br></br> © {new Date().getFullYear()} sva prava pridržana</div>
-            <div style={{flex:1, maxWidth: `42px`}}></div>  
+            <div style={{flex:1}}></div>  
           </footer>
         
-          </Col>
+          
     </>
   )
 }

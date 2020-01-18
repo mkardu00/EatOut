@@ -23,13 +23,13 @@ const SignIn = () => (
             <h2>Prijavi se:</h2>
             <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
              <Label for="exampleEmail" className="mr-sm-2">Email</Label>
-             <br></br>
+            
              <Input type="email" name="email" id="exampleEmail"/>
             </FormGroup>
-            <br></br>
+           
            <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
              <Label for="examplePassword" className="mr-sm-2">Lozinka</Label>
-              <br></br>
+            
               <Input type="password" name="password" id="examplePassword"/>
            </FormGroup>
            <br></br>
@@ -40,14 +40,12 @@ const SignIn = () => (
             <br></br>
             
             
-            <Form class="justify-content-center">
+            <Form>
               <div id="noviKorisnik">
               <h2>Novi korisnik:</h2>
-              <br></br>
                 <a href={'https://www.facebook.com'} className="btn btn-outline-secondary float-center" target="_blank" rel="noopener noreferrer">REGISTRACIJA PUTEM FACEBOOKA</a>
                 <br></br>
-                 <br></br>
-                 <h4 style={{textAlign:'center'}}>ili</h4>
+                 
                  <br></br>
                  <a href={'https://plus.google.com'} className="btn btn-outline-secondary float-center" target="_blank" rel="noopener noreferrer">REGISTRACIJA PUTEM GOOGLEA</a>
                  </div>

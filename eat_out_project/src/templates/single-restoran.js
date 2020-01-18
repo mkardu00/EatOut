@@ -33,7 +33,7 @@ const SingleRestoran = ({data}) =>{
                 </Col>
                 <Col md = "4" id="rezervacija">                   
                    <div id = "napraviRezervaciju" >
-                       <div ><h5>NAPRAVI REZERVACIJU</h5>
+                       <div style={{ textAlign:"center"}}><h5>NAPRAVI REZERVACIJU</h5>
                            </div>
                  
                    <Form>

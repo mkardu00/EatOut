@@ -45,7 +45,7 @@ const Meni = (props) => {
                 <CardTitle>1</CardTitle>
                 <CardText>INFO</CardText>
                 
-              </Card>
+               </Card>
             </Col>
           </Row>
         </TabPane>
