@@ -2,7 +2,7 @@
 #pozadina {
   border: 2px solid black;
   padding: 25px;
-  background-image: url("../images/pocetna_slika.jpg");    
+ 
   background-repeat: no-repeat;
   background-size: cover; 
   resize: both;
@@ -12,12 +12,14 @@
   border-style: ridge;
   border-width: 0px;
   border-color: black;
+  
 }
 #prijava1 { 
   border-style: solid;
   border-width: 2px;
   border-color: white;
   padding: 10px;
+  background-color: whitesmoke;
   
   padding-left: 100px;
   padding-right: 100px;
@@ -25,9 +27,9 @@
   padding-top: 50px;
 }
 #noviKorisnik {
-  text-align: center;
+ 
 
   display: block;
-    align-items: center;
+   
     position: relative;
 }

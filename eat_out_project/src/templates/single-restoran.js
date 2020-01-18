@@ -2,11 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql} from "gatsby"
 import SEO from "../components/seo"
-import {Row, Col, Form,Input, FormGroup,Label} from "reactstrap"
+import {Row, Col, Form,Input, FormGroup,Label,Card} from "reactstrap"
 import Img from "gatsby-image"
 import "../styles/restoran.css"
 import Meni from "./meni"
-
 
 const SingleRestoran = ({data}) =>{
     const post = data.markdownRemark.frontmatter
@@ -18,21 +17,28 @@ const SingleRestoran = ({data}) =>{
             <br></br>
             
             <div id="grad">   
-                    <h1>Restorani u Splitu</h1>             
+            <h1>{post.title}</h1>             
              </div>
              <div id="slikaRestorana">
                 <Img className="card-image-top" fluid={post.image.childImageSharp.fluid}/>
-             </div>   
+             </div> 
+            
+           
+              
+             
             </Col>
             </Row>
             <Row>
                 <Col md = "8" id="opisRestorana">
+               
                        <Meni></Meni>
-                  <h1>{post.title}</h1>
+                  
                     <span className="text-info"></span>
                      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}}/>
                 </Col>
-                <Col md = "4" id="rezervacija">                   
+              
+                <Col md = "4" id="rezervacija">   
+                <Card>                
                    <div id = "napraviRezervaciju" >
                        <div style={{ textAlign:"center"}}><h5>NAPRAVI REZERVACIJU</h5>
                            </div>
@@ -68,10 +74,15 @@ const SingleRestoran = ({data}) =>{
                         <option>9</option>
                         <option>10</option>
                         </Input>
+
                     </FormGroup>
+                    <div id="rezervirajBotun" >
+                    <button className="btn btn-outline-secondary float-left">REZERVIRAJ</button></div>
                     </Form>
                     </div>
+                    </Card>
                 </Col>
+                
             </Row>
         </Layout>
     )

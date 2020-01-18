@@ -10,7 +10,7 @@ const Blog = () => (
   <Layout>
     <SEO title="Blog" />
     <br></br>
-    <h1>Blog</h1>
+    <h1>BLOG</h1>
    <Row>
      <Col md="1"></Col>
      <Col md="10">
@@ -18,7 +18,7 @@ const Blog = () => (
      query= {blogQuery} 
      render={data => {
     return (
-      <div>
+      <div> 
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Post
            key={node.id}
