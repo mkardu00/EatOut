@@ -8,19 +8,19 @@ import Img from "gatsby-image"
 const Restoran = ({title,slug, fluid}) => {
    return(
     
-     
+    <Link to = {slug}>
             <Card>  
         
-            <Link to = {slug}>
+           
                 <Img className="card-image-top" fluid={fluid} />
-            </Link>
+            
 
             <div id="star">  
                             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
                             <span className="fa fa-star checked"></span>
                             <span className="fa fa-star checked"></span>
                             <span className="fa fa-star checked"></span>
-                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star checked"></span>
                             <span className="fa fa-star"></span>
                         </div>
            
@@ -42,6 +42,7 @@ const Restoran = ({title,slug, fluid}) => {
          
         
      </Card>
+     </Link>
     
    ) 
 }

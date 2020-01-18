@@ -17,17 +17,28 @@ const SingleRestoran = ({data}) =>{
             <br></br>
             
             <div id="grad">   
-                    <h1>Restorani u Splitu</h1>             
+            <h1>{post.title}</h1>             
              </div>
              <div id="slikaRestorana">
                 <Img className="card-image-top" fluid={post.image.childImageSharp.fluid}/>
-             </div>   
+             </div>  
+             <div id="ikonice">
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+                 <span className="fa fa-star checked"></span>
+                 <span className="fa fa-star checked"></span>
+                 <span className="fa fa-star checked"></span>
+                 <span className="fa fa-star checked"></span>
+                 <span className="fa fa-star"></span>
+                 <i class="fa fa-comment"></i>
+                  </div>
+              
+             
             </Col>
             </Row>
             <Row>
                 <Col md = "8" id="opisRestorana">
                        <Meni></Meni>
-                  <h1>{post.title}</h1>
+                  
                     <span className="text-info"></span>
                      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}}/>
                 </Col>
