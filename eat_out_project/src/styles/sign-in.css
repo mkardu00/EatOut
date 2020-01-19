@@ -6,21 +6,22 @@
   background-repeat: no-repeat;
   background-size: cover; 
   resize: both;
+  
 }
 #prijava {
     
-  border-style: ridge;
+  
   border-width: 0px;
-  border-color: black;
+ 
   
 }
 #prijava1 { 
-  border-style: solid;
-  border-width: 2px;
-  border-color: white;
+ 
+
+ 
   padding: 10px;
-  background-color: whitesmoke;
   
+ 
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 50px;
@@ -32,4 +33,9 @@
   display: block;
    
     position: relative;
+}
+#botunCentar{
+  display: flex;
+  justify-content: center;
+  
 }

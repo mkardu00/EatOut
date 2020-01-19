@@ -12,15 +12,15 @@ const SignIn = () => (
     <br></br>
       <br></br>
       <Row>
-        <Col md="3" id="prijava">
+        <Col md="2" id="prijava">
          <div ></div>
         </Col>
 
-        <Col md="6" id="prijava1" style={{backgroundColor:'white', borderStyle:' 1px solid black'}}>
+        <Col md="8" id="prijava1" style={{backgroundColor:'white', borderStyle:' 1px solid black'}}>
          <SignMeni></SignMeni>
        
         </Col>
-        <Col md="3" id="prijava">
+        <Col md="2" id="prijava">
          <div ></div>
         </Col>
        
