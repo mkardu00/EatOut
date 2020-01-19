@@ -8,7 +8,6 @@ import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 const SignIn = (props) => {
   const {
-    buttonLabel,
     className
   } = props;
 

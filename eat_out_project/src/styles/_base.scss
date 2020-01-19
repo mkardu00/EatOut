@@ -23,8 +23,10 @@ h1 {
    //#dee2e6;
    background-color:whitesmoke;
   font-weight: bold;
-  border-style: groove;
+ // border-style: groove;
   margin-top: 10px;
+  
+  
  
   
 }
@@ -37,6 +39,7 @@ h1 {
 }
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
+ 
   color: black;
   &:hover {
     color: lightgray;
