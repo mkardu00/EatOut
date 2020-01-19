@@ -14,7 +14,7 @@ const SignMeni = (props) => {
 
   return (
     <div>
-      <Nav tabs>
+      <Nav tabs style={{backgroundColor:"white"}}>
         <NavItem>
           <NavLink
             className={classnames({ active: activeTab === '1' })}
