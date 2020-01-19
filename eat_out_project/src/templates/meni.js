@@ -64,7 +64,16 @@ const Meni = (props) => {
                  <p><i class="fa fa-envelope"></i><b> restorana@gmail.com </b></p>
                  <p><i class="fa fa-map-marker"></i><b> Ruđera Boškovića 32 </b></p>
                  </Col>
-                 <Col sm="8"><p></p></Col></Row>
+                 <Col sm="8"><p>
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  In cursus turpis massa tincidunt dui ut ornare lectus sit. 
+                  In arcu cursus euismod quis viverra nibh cras. Vel pharetra vel turpis nunc.
+                   Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. 
+                   Netus et malesuada fames ac turpis egestas integer eget aliquet. 
+                   Felis imperdiet proin fermentum leo vel. 
+                   Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. 
+                   </p></Col></Row>
                   
                   
                 </CardText>
