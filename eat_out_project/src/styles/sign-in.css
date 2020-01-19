@@ -1,7 +1,7 @@
 
 #pozadina {
-  border: 2px solid black;
-  padding: 25px;
+
+
  
   background-repeat: no-repeat;
   background-size: cover; 
@@ -38,4 +38,11 @@
   display: flex;
   justify-content: center;
   
+}
+.modal-body {
+  padding: 2%;
+}
+#cardPrijave{
+  background-color: white;
+  border: 0;
 }

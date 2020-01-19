@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, CardTitle, 
-    CardText, Row, Col, Form, FormGroup,Input } from 'reactstrap';
+    CardText, Row, Col, Form, FormGroup, Input } from 'reactstrap';
 import classnames from 'classnames';
 import "../styles/restoran.css"
 import { Link } from 'gatsby'
@@ -36,11 +36,9 @@ const SignMeni = (props) => {
         <TabPane tabId="1">
           <Row>
             <Col sm="12">
-            <Card body>
+            <Card  id ="cardPrijave">
                 <CardTitle></CardTitle>
                 <CardText>  
-
-
                      <Form>
                      <div id="noviKorisnik">
               <div id="botunCentar">
@@ -59,7 +57,7 @@ const SignMeni = (props) => {
               </div>
               <br></br>
               <div id="botunCentar">
-              <Col sm="7">
+              <Col sm="9">
                      <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                      
             
@@ -73,7 +71,7 @@ const SignMeni = (props) => {
           </FormGroup>
           <br></br>
           <div id="botunCentar">
-           <Link to={'./sign-in'} className="btn btn-outline-secondary float-left">PRIJAVA</Link>
+           <Link to={'./sign-in'} className="btn btn-outline-secondary float-left">REGISTRACIJA</Link>
            </div>
            <br></br>
            <br></br>
@@ -95,7 +93,7 @@ const SignMeni = (props) => {
         <TabPane tabId="2">
           <Row>
             <Col sm="12">
-              <Card body>
+              <Card  id ="cardPrijave">
                 <CardTitle></CardTitle>
                 <CardText>  
 
@@ -118,7 +116,7 @@ const SignMeni = (props) => {
               </div>
               <br></br>
               <div id="botunCentar">
-              <Col sm="7">
+              <Col sm="9">
                      <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                      
             
