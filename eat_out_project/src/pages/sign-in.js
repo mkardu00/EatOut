@@ -1,38 +1,48 @@
-import React from "react"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/sign-in.css"
-import { Row, Col} from "reactstrap"
+
 import SignMeni from "../templates/signeMeni"
+import React, { useState } from 'react';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-const SignIn = () => (
-  <Layout>
-    <SEO title="Prijava" />
-    <div id="pozadina">
-    <br></br>
-      <br></br>
-      <Row>
-        <Col md="3" id="prijava">
-         <div ></div>
-        </Col>
 
-        <Col md="6" id="prijava1" style={{backgroundColor:'white', borderStyle:' 1px solid black'}}>
+const SignIn = (props) => {
+  const {
+    className
+  } = props;
+
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
+
+  return (
+    <div>
+      
+      <button class="btn btn-outline-secondary float-left" onClick={toggle}>PRIJAVA</button>
+      <Modal isOpen={modal} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }}
+        toggle={toggle} className={className}>
+        <ModalHeader toggle={toggle}><h4>Prijava na servis EatOut</h4></ModalHeader>
+        <ModalBody>
+          <SEO title="Prijava" />
+          <div id="pozadina">
+      
+        
          <SignMeni></SignMeni>
        
-        </Col>
-        <Col md="3" id="prijava">
-         <div ></div>
-        </Col>
        
-
-      </Row>
-      <br></br>
-      <br></br>
      
-      
     
     </div>
-  </Layout>
-)
 
-export default SignIn
+
+
+        </ModalBody>
+        <ModalFooter>
+      
+        </ModalFooter>
+      </Modal>
+    </div>
+  );
+}
+
+export default SignIn;

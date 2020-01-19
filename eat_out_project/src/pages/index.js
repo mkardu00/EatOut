@@ -6,6 +6,7 @@ import "../styles/index.css"
 import { Link } from 'gatsby'
 import { Input } from 'reactstrap';
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Pocetna" />
@@ -21,6 +22,7 @@ const IndexPage = () => (
          <Input type="text" name="city" id="exampleCity" bsSize="lg"/>
         </div>
         <Link to={'./split'} className="btn btn-outline-secondary float-right btn-lg">PRONAĐI RESTORAN</Link>
+       
       </div>
         
   

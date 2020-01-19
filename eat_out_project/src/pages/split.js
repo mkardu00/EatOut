@@ -19,9 +19,11 @@ const Split = () => (
     <br></br>
     <Row>
       <Col md="4" id="Split" style={{backgroundColor:'white'}}>
-        <div style={{position:'fixed', backgroundColor:'whitesmoke'}} ><h1>fiksni stupac</h1></div>
+        <div style={{position:'fixed', backgroundColor:'whitesmoke'}} >
+
+        </div>
       </Col>
-      <Col md="8" id="Split" style={{backgroundColor:'white', borderStyle:' 1px solid black'}}>
+      <Col md="8" id="Split" style={{backgroundColor:'white'}}>
         <StaticQuery
           query= {blogQuery1} 
           render={data => {

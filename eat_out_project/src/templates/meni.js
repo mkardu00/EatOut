@@ -43,7 +43,14 @@ const Meni = (props) => {
           <Row>
             <Col sm="12">
             <Card body>
-                <CardTitle> <div id="ikonice">
+                <CardTitle> 
+                </CardTitle>
+               
+                
+                <CardText>
+                  <Row>
+                
+                <Col sm="4">
              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
              <p>
                  <span className="fa fa-star checked"></span>
@@ -54,12 +61,19 @@ const Meni = (props) => {
                  </p>
                  <p><i class="fa fa-phone"></i><b> 021/552453</b></p>
                  <p><i class="fa fa-clock-o"></i><b> 10:00–01:00 </b></p>
-                 <p><i class="fa fa-envelope"></i><b> naziv_restorana@gmail.com </b></p>
+                 <p><i class="fa fa-envelope"></i><b> restorana@gmail.com </b></p>
                  <p><i class="fa fa-map-marker"></i><b> Ruđera Boškovića 32 </b></p>
-
-                  </div></CardTitle>
-                <CardText>
-                  
+                 </Col>
+                 <Col sm="8"><p>
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  In cursus turpis massa tincidunt dui ut ornare lectus sit. 
+                  In arcu cursus euismod quis viverra nibh cras. Vel pharetra vel turpis nunc.
+                   Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. 
+                   Netus et malesuada fames ac turpis egestas integer eget aliquet. 
+                   Felis imperdiet proin fermentum leo vel. 
+                   Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. 
+                   </p></Col></Row>
                   
                   
                 </CardText>

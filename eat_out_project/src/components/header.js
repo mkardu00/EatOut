@@ -9,7 +9,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
-
+import SignIn from "../pages/sign-in"
 
 
 class Header extends React.Component{
@@ -46,11 +46,12 @@ class Header extends React.Component{
                 <NavLink href="/about">O NAMA</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/sign-in">PRIJAVA</NavLink>
+                <SignIn></SignIn>
               </NavItem>         
             </Nav>
           </Collapse>
         </Navbar>
+       
       </div>
     );
     }

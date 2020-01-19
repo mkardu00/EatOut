@@ -34,7 +34,7 @@ const SingleRestoran = ({data}) =>{
                        <Meni></Meni>
                   
                     <span className="text-info"></span>
-                     <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}}/>
+                  
                 </Col>
               
                 <Col md = "4" id="rezervacija">   
