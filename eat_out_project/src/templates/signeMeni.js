@@ -72,8 +72,13 @@ const SignMeni = (props) => {
           <br></br>
           <div id="botunCentar">
            <Link to={'./sign-in'} className="btn btn-outline-secondary float-left">PRIJAVA</Link>
+           
+          
            </div>
            <br></br>
+           <p style={{textAlign:`center`}}>Zaboravili ste lozinku?</p>
+           <br></br>
+           
            <br></br>
            <br></br>
            </Col>

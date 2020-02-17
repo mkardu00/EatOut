@@ -5,6 +5,7 @@ import { Row, Col} from "reactstrap"
 import "../styles/split.css"
 import { graphql, StaticQuery } from "gatsby"
 import Restoran from "../components/Restoran"
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 const Split = () => (
   <Layout>
@@ -13,22 +14,38 @@ const Split = () => (
     <div id="grad">
          
         <h1>RESTORANI U SPLITU</h1>
+       
+      
  
     </div>    
+    <div className="bread"> 
+        <Breadcrumb>
+        <BreadcrumbItem><a className="aaa" href="/">Početna</a></BreadcrumbItem>
+        <BreadcrumbItem active>Restorani u Splitu</BreadcrumbItem>
+      </Breadcrumb>
+        </div>
+     
    
     <br></br>
     <Row>
-      <Col md="4" id="Split" style={{backgroundColor:'white'}}>
+      
+    <Col md="2" id="Split" style={{backgroundColor:'white'}}>
         <div style={{position:'fixed', backgroundColor:'whitesmoke'}} >
 
-        </div>
-      </Col>
-      <Col md="8" id="Split" style={{backgroundColor:'white'}}>
+        </div>  
+        </Col>
+      <Col md="10" id="Split" style={{backgroundColor:'white'}}>
         <StaticQuery
           query= {blogQuery1} 
           render={data => {
            return (
-            <div class="card-columns">  
+
+     
+     
+  
+
+
+            <div class="card-columns" >  
              {data.allMarkdownRemark.edges.map(({ node }) => (
               <Restoran
               key={node.id}
@@ -46,7 +63,8 @@ const Split = () => (
           )
           }}
          />
-       </Col>   
+       </Col> 
+       
     </Row>
   </Layout>
 )

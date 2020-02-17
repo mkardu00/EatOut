@@ -1,5 +1,5 @@
 ---
-title: 'Mediterraneo restaurant'
+title: 'Mediterraneo'
 image: ../../images/restoran7.png
 type: 'restoranST'
 tags:
