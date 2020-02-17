@@ -14,7 +14,7 @@ const SignMeni = (props) => {
 
   return (
     <div>
-      <Nav tabs>
+      <Nav tabs style={{backgroundColor:"white"}}>
         <NavItem>
           <NavLink
             className={classnames({ active: activeTab === '1' })}
@@ -42,7 +42,7 @@ const SignMeni = (props) => {
                      <Form>
                      <div id="noviKorisnik">
               <div id="botunCentar">
-             <a href={'https://www.facebook.com'} className="btn btn-outline-primary float-center" target="_blank" rel="noopener noreferrer">PRIJAVA PUTEM FACEBOOKA</a>
+             <a href={'https://www.facebook.com'} className="btn btn-outline-secondary float-center" target="_blank" rel="noopener noreferrer">PRIJAVA PUTEM FACEBOOKA</a>
            
               </div>
               <br></br>
@@ -71,7 +71,7 @@ const SignMeni = (props) => {
           </FormGroup>
           <br></br>
           <div id="botunCentar">
-           <Link to={'./sign-in'} className="btn btn-outline-secondary float-left">REGISTRACIJA</Link>
+           <Link to={'./sign-in'} className="btn btn-outline-secondary float-left">PRIJAVA</Link>
            </div>
            <br></br>
            <br></br>
@@ -101,7 +101,7 @@ const SignMeni = (props) => {
                      <Form>
                      <div id="noviKorisnik">
               <div id="botunCentar">
-             <a href={'https://www.facebook.com'} className="btn btn-outline-primary float-center" target="_blank" rel="noopener noreferrer">REGISTRACIJA PUTEM FACEBOOKA</a>
+             <a href={'https://www.facebook.com'} className="btn btn-outline-secondary float-center" target="_blank" rel="noopener noreferrer">REGISTRACIJA PUTEM FACEBOOKA</a>
            
               </div>
               <br></br>
@@ -134,7 +134,7 @@ const SignMeni = (props) => {
           <br></br>
           
           <div id="botunCentar">
-           <Link to={'./sign-in'} className="btn btn-outline-secondary float-left">PRIJAVA</Link>
+           <Link to={'./sign-in'} className="btn btn-outline-secondary float-left">REGISTRACIJA</Link>
            </div>
            <br></br>
            <br></br>

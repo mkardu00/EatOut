@@ -17,7 +17,8 @@ const SinglePost = ({data}) =>{
                 <Col md ="2"></Col>
                 <Col md = "8">
                     <Card>
-                    <Img className="card-image-top" fluid={post.image.childImageSharp.fluid}/>
+                    <Img className="card-image-top" style={{height:`50vh`}}
+                    fluid={post.image.childImageSharp.fluid}/>
                     <CardBody>
                         <CardSubtitle>
                             <span className="text-info">{post.date}</span> by
