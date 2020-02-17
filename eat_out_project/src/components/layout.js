@@ -6,6 +6,7 @@ import { Col} from "reactstrap"
 import "../styles/index.scss"
 
 
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -22,14 +23,14 @@ const Layout = ({ children }) => {
   `)
   return (
     <>
-     <Col md="12"> 
+
        <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
           <div className="container" id="content"></div>
           <main style={{backgroundColor:"F5F5F5"}}>{children}</main>
-          </Col>
+          
           <footer  style={{
             fontSize: `60%`,
-              height: `30px`,
+              height: `5vh`,
              
               background: `black`,
               marginBottom: `1.45rem`,

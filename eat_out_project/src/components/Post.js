@@ -9,7 +9,11 @@ const Post = ({title, author, slug, date, body, fluid, tags}) => {
    return(
      <Card>
         <Link to = {slug}>
-        <Img className="card-image-top" fluid={fluid}/>
+        <Img className="card-image-top" fluid={fluid}
+        style={{ maxHeight: "50%" }}
+    imgStyle={{ objectFit: "contain" }}
+    
+        />
         </Link>
         <CardBody>
             <CardTitle>
