@@ -9,7 +9,7 @@ import { Form, FormGroup,Input } from 'reactstrap';
 const About = () => (
   <Layout>
     <SEO title="O nama" />
-    <Row>
+    <Row style={{height: "100vh"}}>
       <Col sm="1"></Col>
       <Col sm="4">
       <p>

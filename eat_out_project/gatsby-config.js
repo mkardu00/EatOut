@@ -23,10 +23,24 @@ module.exports = {
     ]
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-scroll-indicator`,
+      options: {
+        // Configure color of the scroll indicator
+        color: '#000000',
+        // Height of the scroll indicator
+        height: '3px',
+        // Configure paths where the scroll indicator will appear
+        paths: ['/', '/blog/**'],
+        // Configure the z-index of the indicator element
+        zIndex: `9999`,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
