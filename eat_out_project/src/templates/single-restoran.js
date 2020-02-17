@@ -26,7 +26,7 @@ const SingleRestoran = ({data}) =>{
         <BreadcrumbItem active>{post.title}</BreadcrumbItem>
       </Breadcrumb>
              <div id="slikaRestorana">
-                <Img className="card-image-top" fluid={post.image.childImageSharp.fluid}/>
+                <Img className="card-image-top" fluid={post.image.childImageSharp.fluid} />
              </div> 
             
            

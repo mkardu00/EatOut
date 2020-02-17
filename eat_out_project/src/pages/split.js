@@ -28,12 +28,13 @@ const Split = () => (
    
     <br></br>
     <Row>
-      <Col md="4" id="Split" style={{backgroundColor:'white'}}>
+      
+    <Col md="2" id="Split" style={{backgroundColor:'white'}}>
         <div style={{position:'fixed', backgroundColor:'whitesmoke'}} >
 
-        </div>
-      </Col>
-      <Col md="8" id="Split" style={{backgroundColor:'white'}}>
+        </div>  
+        </Col>
+      <Col md="10" id="Split" style={{backgroundColor:'white'}}>
         <StaticQuery
           query= {blogQuery1} 
           render={data => {
@@ -62,7 +63,8 @@ const Split = () => (
           )
           }}
          />
-       </Col>   
+       </Col> 
+       
     </Row>
   </Layout>
 )

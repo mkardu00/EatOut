@@ -12,7 +12,7 @@ const Restoran = ({title,slug, fluid}) => {
             <Card>  
         
            
-                <Img className="card-image-top" fluid={fluid} />
+                <Img className="card-image-top" fluid={fluid} style={{height:`50vh`}} />
          
 
             <div id="star">  
