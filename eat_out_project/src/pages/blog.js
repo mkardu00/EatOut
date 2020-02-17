@@ -13,7 +13,7 @@ const Blog = () => (
     <h1>BLOG</h1>
    <Row>
      <Col md="1"></Col>
-     <Col md="10">
+     <Col md="12">
      <StaticQuery
      query= {blogQuery} 
      render={data => {
