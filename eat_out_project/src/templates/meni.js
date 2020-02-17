@@ -157,9 +157,18 @@ const Meni = (props) => {
           <Row>
             <Col sm="12">
             <Card body>
-                <CardTitle>   <p><b>32 </b>
-                 <i class="fa fa-comment"></i>
-                 </p></CardTitle>
+                <CardTitle>
+                 
+                 <div className="komentar">
+                   <h6 style={{paddingLeft:`1%`, paddingTop:`1%`}}>KOMENTIRAJ
+                   </h6>
+                   <p className="kom">
+    
+                     Kako bi mogli komentirati potrebno je imati rezervaciju u ovom restoranu.
+                   </p>
+                   <br></br>
+                 </div>
+                 </CardTitle>
                 <CardText>
                 
                   <p><i class="fa fa-comment"></i><b> Andrea</b><br></br>

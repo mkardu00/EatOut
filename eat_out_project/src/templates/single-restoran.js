@@ -6,6 +6,7 @@ import {Row, Col, Form,Input, FormGroup,Label,Card} from "reactstrap"
 import Img from "gatsby-image"
 import "../styles/restoran.css"
 import Meni from "./meni"
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 const SingleRestoran = ({data}) =>{
     const post = data.markdownRemark.frontmatter
@@ -19,6 +20,11 @@ const SingleRestoran = ({data}) =>{
             <div id="grad">   
             <h1>{post.title}</h1>             
              </div>
+             <Breadcrumb>
+        <BreadcrumbItem><a className="aaa"  href="/">Početna</a></BreadcrumbItem>
+        <BreadcrumbItem><a className="aaa"  href="/split">Restorani u Splitu</a></BreadcrumbItem>
+        <BreadcrumbItem active>{post.title}</BreadcrumbItem>
+      </Breadcrumb>
              <div id="slikaRestorana">
                 <Img className="card-image-top" fluid={post.image.childImageSharp.fluid}/>
              </div> 
