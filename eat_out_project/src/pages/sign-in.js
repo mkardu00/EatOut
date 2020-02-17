@@ -21,10 +21,11 @@ const SignIn = (props) => {
       <button class="btn btn-outline-secondary float-left" onClick={toggle}>PRIJAVA</button>
       <Modal isOpen={modal} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }}
         toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}><h4>Prijava na servis EatOut</h4></ModalHeader>
+        <ModalHeader toggle={toggle}></ModalHeader>
         <ModalBody>
           <SEO title="Prijava" />
           <div id="pozadina">
+          <h3 style={{textAlign:`center`}}>PRIJAVA<br></br><br></br></h3>
       
         
          <SignMeni></SignMeni>

@@ -4,16 +4,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
 import Post from "../components/Post"
-import { Row, Col} from "reactstrap"
 
 const Blog = () => (
   <Layout>
     <SEO title="Blog" />
     <br></br>
     <h1>BLOG</h1>
-   <Row>
-     <Col md="1"></Col>
-     <Col md="12">
+    <br></br>
+   
      <StaticQuery
      query= {blogQuery} 
      render={data => {
@@ -35,10 +33,7 @@ const Blog = () => (
     )
     }}
     />
-     </Col>
-     <Col md="1"></Col>
-
-   </Row>
+   
 
   </Layout>
 )

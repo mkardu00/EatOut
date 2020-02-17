@@ -3,18 +3,28 @@ import { Link } from 'gatsby'
 import {Card, CardTitle, CardText, CardSubtitle, CardBody } from 'reactstrap'
 import "../styles/index.scss"
 import Img from "gatsby-image"
+import { Row, Col} from "reactstrap"
 
 
 const Post = ({title, author, slug, date, body, fluid, tags}) => {
    return(
+    
      <Card>
-        <Link to = {slug}>
-        <Img className="card-image-top" fluid={fluid}
-        style={{ maxHeight: "50%" }}
-    imgStyle={{ objectFit: "contain" }}
+       <Row>
+    <Col sm="6"><Link to = {slug}>
+        <Img className="card-image-left"
+        style={{height:`50vh`}}
+         fluid={fluid}
+        
+    
     
         />
-        </Link>
+        </Link></Col>
+    
+    <Col sm="6">
+    
+
+        
         <CardBody>
             <CardTitle>
                
@@ -28,6 +38,9 @@ const Post = ({title, author, slug, date, body, fluid, tags}) => {
         <CardText>{body}</CardText> 
         <Link to={slug} className="btn btn-outline-secondary float-right">PROČITAJ VIŠE</Link>
         </CardBody>
+        </Col>
+        </Row>
+    
      </Card>
    ) 
 }
