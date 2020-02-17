@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 import "../styles/restoran.css"
 import Meni from "./meni"
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import Rezerviraj from "../templates/rezerviraj"
 
 const SingleRestoran = ({data}) =>{
     const post = data.markdownRemark.frontmatter
@@ -83,7 +84,8 @@ const SingleRestoran = ({data}) =>{
 
                     </FormGroup>
                     <div id="rezervirajBotun" >
-                    <button className="btn btn-outline-secondary float-left">REZERVIRAJ</button></div>
+         
+                    <Rezerviraj></Rezerviraj>         </div>
                     </Form>
                     </div>
                     </Card>
