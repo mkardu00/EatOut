@@ -5,7 +5,7 @@ import { Row, Col} from "reactstrap"
 import "../styles/split.css"
 import { graphql, StaticQuery } from "gatsby"
 import Restoran from "../components/Restoran"
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, CustomInput,Form,FormGroup,Label } from 'reactstrap';
 
 const Split = () => (
   <Layout>
@@ -30,21 +30,49 @@ const Split = () => (
     <Row>
       
     <Col md="2" id="Split" style={{backgroundColor:'white'}}>
-        <div style={{position:'fixed', backgroundColor:'whitesmoke'}} >
+        <div style={{ paddingLeft:'7%'}} >
+        <Form>
+          <FormGroup>search</FormGroup>
+      <FormGroup>
+        <br></br>
+        <Label for="exampleCheckbox">KUHINJA</Label>
+        <div>
+          <CustomInput type="checkbox" id="exampleCustomCheckbox" label="Azijska" />
+          <CustomInput type="checkbox" id="exampleCustomCheckbox2" label="Mediteranska" />
+          <CustomInput type="checkbox" id="exampleCustomCheckbox2" label="Meksička" />
+          <CustomInput type="checkbox" id="exampleCustomCheckbox2" label="Talijanska" />
+          <CustomInput type="checkbox" id="exampleCustomCheckbox2" label="Američka" />
+          <CustomInput type="checkbox" id="exampleCustomCheckbox2" label="Kineska" />
+          <CustomInput type="checkbox" id="exampleCustomCheckbox2" label="Tajlandska" />
+        </div>
+        <br></br>
+      </FormGroup>
+      <FormGroup>
+      <Label for="exampleCheckbox">OCJENA</Label><br></br>
+      
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+              
+
+      </FormGroup>
+      </Form>
+     
 
         </div>  
         </Col>
+
+
+
+
+
       <Col md="10" id="Split" style={{backgroundColor:'white'}}>
         <StaticQuery
           query= {blogQuery1} 
           render={data => {
            return (
-
-     
-     
-  
-
-
             <div class="card-columns" >  
              {data.allMarkdownRemark.edges.map(({ node }) => (
               <Restoran
