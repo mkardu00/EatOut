@@ -35,12 +35,26 @@ const IndexPage = (props) => (
         </div>
         <Link to={'./split'} className="btn btn-outline-secondary float-right btn-lg">PRETRAGA</Link>
        
+        
       </div>
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      
+      <i class="fa fa-angle-double-down" style={{fontSize:`25px`}}></i>
+     
         </div>
+    
+      
+    
       </div>
+
       
 
     </BackgroundImage>
+   
+
+   
      
     
     

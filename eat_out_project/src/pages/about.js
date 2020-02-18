@@ -22,7 +22,7 @@ const About = (props) => (
       <div className="black-overlay1">
         <div className = "content-box1">
         <br></br>
-    <h1>O NAMA</h1>
+    <h1 style={{color:`white`}}>O NAMA</h1>
     <br></br>
     <Row >
        
@@ -35,6 +35,9 @@ const About = (props) => (
       <p><i class="fa fa-phone"></i> 098/2452456</p>
       <p><i class="fa fa-clock-o"></i> 09:00–17:00</p>
       <p><i class="fa fa-envelope"></i> eatout@gmail.com</p>
+      <p className="kontakti"><i class="fa fa-instagram"></i> <i class="fa fa-facebook-square"> </i>
+      <i class="fa fa-pinterest"></i></p>
+      
     
 
       </p>
@@ -59,7 +62,7 @@ const About = (props) => (
         <Input type="textarea" name="text" placeholder="Poruka" />
       </FormGroup>
     
-      <button class="btn btn-outline-secondary float-right">POŠALJI</button>
+      <button class="btn btn-outline-secondary float-left">POŠALJI</button>
     </Form>
     <br></br>   
     <br></br>
