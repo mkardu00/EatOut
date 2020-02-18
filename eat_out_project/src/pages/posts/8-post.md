@@ -1,6 +1,6 @@
 ---
 title: 'Cursus metus'
-data: 15.01.2020
+data: 2019-10-30
 author: ' Anita Antić'
 image: ../../images/split8.png
 type: 'post'

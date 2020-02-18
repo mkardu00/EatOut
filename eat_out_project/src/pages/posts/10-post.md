@@ -1,6 +1,6 @@
 ---
 title: 'Risus quis'
-data: 20.01.2020
+data:  2019-12-04
 author: ' Marko Matić'
 image: ../../images/split10.png
 type: 'post'

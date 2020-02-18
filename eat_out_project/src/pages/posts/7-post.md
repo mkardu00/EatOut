@@ -1,6 +1,6 @@
 ---
 title: 'Eget dolor'
-data: 12.01.2020
+data: 2020-01-09
 author: ' Iva Ivić'
 image: ../../images/split7.png
 type: 'post'

@@ -1,6 +1,6 @@
 ---
 title: 'Pellentesque elit'
-data: 02.1.2020
+data: 2020-01-10
 author: ' Hrvoje Horvat'
 image: ../../images/split5.png
 type: 'post'
