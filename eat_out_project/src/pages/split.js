@@ -42,7 +42,13 @@ class Split extends React.Component {
               <FormGroup >
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
                 <div className="search"> 
+               
                   <InputGroup>
+                  <InputGroupAddon addonType="prepend">
+                  <Button disabled>
+                        <i class="fa fa-search"></i>
+                      </Button>
+                      </InputGroupAddon>
                     <Input
                       onChange={this.handleInput}
                       value={this.state.inputText}
@@ -50,11 +56,9 @@ class Split extends React.Component {
                     >
                     
                     </Input>
-                    <InputGroupAddon addonType="append">
-                      <Button onClick={this.handleSubmit}>
-                        <i class="fa fa-search"></i>
-                      </Button>
-                    </InputGroupAddon>
+                    
+                  
+                   
                   </InputGroup>
                 </div>
               </FormGroup>
