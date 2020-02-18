@@ -1,6 +1,6 @@
 ---
 title: 'Ornare aenean'
-data: 18.01.2020
+data:  2019-11-15
 author: ' Anita Antić'
 image: ../../images/split9.png
 type: 'post'

@@ -41,8 +41,11 @@ const Layout = ({ children }) => {
               padding: `0px 0rem 0rem`}}
               >
             <div style={{ flex:1}}> </div>
-            <div style={{ display: "flex", textAlign:"center"}}> EatOut<br></br> © {new Date().getFullYear()} sva prava pridržana</div>
+            <div style={{ display: "flex", textAlign:"center"}}> EatOut<br></br> © {new Date().getFullYear()} sva prava pridržana<br></br>
+   
+            </div>
             <div style={{flex:1}}></div>  
+        
           </footer>
         
           

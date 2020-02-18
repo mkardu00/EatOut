@@ -40,13 +40,13 @@ const Blog = () => (
 
 const blogQuery = graphql`
 query blogQuery{
-  allMarkdownRemark(filter: {frontmatter: {type: {eq: "post"}}}){
+  allMarkdownRemark(filter: {frontmatter: {type: {eq: "post"}}},sort: {fields: frontmatter___data, order: DESC}){
   edges{
     node{
       id
       frontmatter{
         title
-        data
+        data(formatString: "MMM Do YYYY")
         author
         tags
         type

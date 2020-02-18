@@ -1,6 +1,6 @@
 ---
 title: 'Mus mauris'
-data: 08.01.2020
+data: 2019-11-05
 author: ' Hrvoje Horvat'
 image: ../../images/split6.png
 type: 'post'

@@ -1,6 +1,6 @@
 ---
 title: 'Porta nibh'
-data: 11.12.2019
+data: 2019-01-21
 author: ' Anita Antić'
 image: ../../images/split4.png
 type: 'post'

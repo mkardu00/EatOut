@@ -1,6 +1,6 @@
 ---
 title: 'Maecenas sed'
-data: 05.12.2019
+data: 2019-12-01
 author: ' Iva Ivić'
 image: ../../images/split2.png
 type: 'post'

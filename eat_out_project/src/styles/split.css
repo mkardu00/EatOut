@@ -31,10 +31,12 @@
     display: flex;
     background-color: white;
    
+   
 
 }
 .aaa{
     color: black !important;
+   
   }
 
   .rez{
@@ -43,4 +45,9 @@
     border-color: white;
     
   }
-  
+  .search{
+    max-width: 30vh;
+  }
+
+      
+    

@@ -1,6 +1,6 @@
 ---
 title: 'Lectus nulla'
-data: 10.12.2019
+data: 2019-10-11
 author: ' Marko Matić'
 image: ../../images/split3.png
 type: 'post'

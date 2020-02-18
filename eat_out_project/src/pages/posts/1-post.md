@@ -1,6 +1,6 @@
 ---
 title: 'Luctus accumsan'
-data: 02.11.2019
+data: 2019-11-01
 author: ' Hrvoje Horvat'
 image: ../../images/split1.png
 type: 'post'
