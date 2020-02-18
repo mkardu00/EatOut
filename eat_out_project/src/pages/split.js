@@ -5,18 +5,14 @@ import { Row, Col} from "reactstrap"
 import "../styles/split.css"
 import { graphql, StaticQuery } from "gatsby"
 import Restoran from "../components/Restoran"
-import { Breadcrumb, BreadcrumbItem, CustomInput,Form,FormGroup,Label } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, CustomInput,Form,FormGroup,Label, Input,InputGroupAddon, InputGroup,Button} from 'reactstrap';
 
 const Split = () => (
   <Layout>
     <SEO title="Split" />
     <br></br>
-    <div id="grad">
-         
+    <div id="grad">  
         <h1>RESTORANI U SPLITU</h1>
-       
-      
- 
     </div>    
     <div className="bread"> 
         <Breadcrumb>
@@ -24,15 +20,27 @@ const Split = () => (
         <BreadcrumbItem active>Restorani u Splitu</BreadcrumbItem>
       </Breadcrumb>
         </div>
-     
-   
     <br></br>
-    <Row>
-      
+    <Row>     
     <Col md="2" id="Split" style={{backgroundColor:'white'}}>
         <div style={{ paddingLeft:'7%'}} >
         <Form>
-          <FormGroup>search</FormGroup>
+          <FormGroup >
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+            <div className="search"> 
+              <InputGroup>
+                <Input placeholder="search">
+                
+                </Input>
+                <InputGroupAddon addonType="append">
+                  <Button>
+                    <i class="fa fa-search"></i>
+                  </Button>
+                </InputGroupAddon>
+              </InputGroup>
+            </div>
+          </FormGroup>
+        
       <FormGroup>
         <br></br>
         <Label for="exampleCheckbox">KUHINJA</Label>
@@ -55,19 +63,10 @@ const Split = () => (
                   <span class="fa fa-star"></span>
                   <span class="fa fa-star"></span>
                   <span class="fa fa-star"></span>
-              
-
       </FormGroup>
       </Form>
-     
-
         </div>  
         </Col>
-
-
-
-
-
       <Col md="10" id="Split" style={{backgroundColor:'white'}}>
         <StaticQuery
           query= {blogQuery1} 
