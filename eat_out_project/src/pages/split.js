@@ -9,11 +9,15 @@ import { Breadcrumb, BreadcrumbItem, CustomInput,Form,FormGroup,Label, Input,Inp
 
 class Split extends React.Component {
   state = {
-    inputText: '' 
+    inputText: ''
   }
 
   handleInput = (e) => {
     this.setState({inputText: e.target.value});
+  }
+
+  handleSubmit = () => {
+    this.forceUpdate();
   }
 
   render() {
@@ -38,7 +42,13 @@ class Split extends React.Component {
               <FormGroup >
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
                 <div className="search"> 
+               
                   <InputGroup>
+                  <InputGroupAddon addonType="prepend">
+                  <Button disabled>
+                        <i class="fa fa-search"></i>
+                      </Button>
+                      </InputGroupAddon>
                     <Input
                       onChange={this.handleInput}
                       value={this.state.inputText}
@@ -46,11 +56,9 @@ class Split extends React.Component {
                     >
                     
                     </Input>
-                    <InputGroupAddon addonType="append">
-                      <Button onClick={() => console.log("KLIKNUTO: "+ this.state.inputText)}>
-                        <i class="fa fa-search"></i>
-                      </Button>
-                    </InputGroupAddon>
+                    
+                  
+                   
                   </InputGroup>
                 </div>
               </FormGroup>
@@ -83,25 +91,41 @@ class Split extends React.Component {
             </Col>
           <Col md="10" id="Split" style={{backgroundColor:'white'}}>
             <StaticQuery
-              query= {blogQuery1} 
+              query={blogQuery1}
               render={data => {
-              return (
-                <div class="card-columns" >  
-                {data.allMarkdownRemark.edges.map(({ node }) => (
-                  <Restoran
-                  key={node.id}
-                  title={node.frontmatter.title}  
-                  slug={node.fields.slug}
-                  body={node.excerpt}
-                  fluid={node.frontmatter.image.childImageSharp.fluid}
-                  tags={node.frontmatter.tags}
-                  type={node.frontmatter.type}
-                />
-                ))}
-                
-                
-                </div>
-              )
+                return (
+                  <div class="card-columns" >  
+                    {data.allMarkdownRemark.edges.map(({ node }) => {
+                      if (this.state.inputText !== '') {
+                        let inputText = this.state.inputText
+                        let restaurantTitle = node.frontmatter.title
+                        if (restaurantTitle.toLowerCase().includes(inputText.toLowerCase())) {
+                          return (
+                            <Restoran
+                              key={node.id}
+                              title={node.frontmatter.title}  
+                              slug={node.fields.slug}
+                              body={node.excerpt}
+                              fluid={node.frontmatter.image.childImageSharp.fluid}
+                              tags={node.frontmatter.tags}
+                              type={node.frontmatter.type}
+                            />
+                          )}
+                      } else {
+                        return (
+                          <Restoran
+                            key={node.id}
+                            title={node.frontmatter.title}  
+                            slug={node.fields.slug}
+                            body={node.excerpt}
+                            fluid={node.frontmatter.image.childImageSharp.fluid}
+                            tags={node.frontmatter.tags}
+                            type={node.frontmatter.type}
+                          />
+                      )}
+                    })}
+                  </div>
+                )
               }}
             />
           </Col> 
@@ -110,31 +134,31 @@ class Split extends React.Component {
       </Layout>
   )}}
 const blogQuery1 = graphql`
-query blogQuery1{
-  allMarkdownRemark(filter: {frontmatter: {type: {eq: "restoranST"}}}){
-  edges{
-    node{
-      id
-      frontmatter{
-        title
-        tags
-        type
-        image{
-          childImageSharp{
-            fluid(maxWidth: 600){
-              ...GatsbyImageSharpFluid
+  query blogQuery1{
+    allMarkdownRemark(filter: {frontmatter: {type: {eq: "restoranST"}}}){
+    edges{
+      node{
+        id
+        frontmatter{
+          title
+          tags
+          type
+          image{
+            childImageSharp{
+              fluid(maxWidth: 600){
+                ...GatsbyImageSharpFluid
+              }
             }
-          }
-        }    
+          }    
+        }
+        fields{
+          slug
+        }
+        excerpt
       }
-      fields{
-        slug
-      }
-      excerpt
     }
   }
- }
-}
+  }
 `
 
 export default Split
