@@ -16,10 +16,6 @@ class Split extends React.Component {
     this.setState({inputText: e.target.value});
   }
 
-  handleSubmit = () => {
-    this.forceUpdate();
-  }
-
   render() {
     return (
       <Layout>
@@ -110,7 +106,7 @@ class Split extends React.Component {
                               tags={node.frontmatter.tags}
                               type={node.frontmatter.type}
                             />
-                          )}
+                          )} else {return null}
                       } else {
                         return (
                           <Restoran

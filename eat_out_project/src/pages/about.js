@@ -56,8 +56,6 @@ const About = (props) => (
       <FormGroup>
         <Input type="email" name="email" id="exampleEmail" placeholder="E-mail"/>
       </FormGroup>
-
-  
       <FormGroup>
         <Input type="textarea" name="text" placeholder="Poruka" />
       </FormGroup>
