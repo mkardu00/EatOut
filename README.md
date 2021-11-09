@@ -1,3 +1,3 @@
 # EatOut
-EatOut je frontend web aplikacije za rezervacije u restoranima preko interneta.<br>
+EatOut je napravljen u sklopu kolegija "Korisnička sučelja". Sastoji se od frontenda web aplikacije za rezervacije u restoranima te hardkodiranog/dummy "backenda".<br>
 https://eatout.netlify.com/
